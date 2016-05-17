@@ -1,0 +1,9 @@
+language: swift
+osx_image: xcode7.3
+xcode_project: TPGSwift.xcodeproj
+before_install:
+- brew update
+- brew upgrade xctool
+- brew install carthage
+- carthage bootstrap --verbose
+xcode_scheme: TPGSwift

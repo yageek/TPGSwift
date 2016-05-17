@@ -1,0 +1,27 @@
+//
+//  APIKey.swift
+//  TPGSwift
+//
+//  Created by Yannick Heinrich on 11.05.16.
+//  Copyright © 2016 yageek's company. All rights reserved.
+//
+
+import Foundation
+
+
+extension API {
+
+    /**
+        The API Key provided by the TPG.
+     */
+    public static var Key: String?
+    public static let HostURL = "http://prod.ivtr-od.tpg.ch/v1"
+
+    internal static let TimestampFormatter: NSDateFormatter = {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        return formatter
+    }()
+
+    internal static let baseURL  = NSURL(string:HostURL)!
+}
