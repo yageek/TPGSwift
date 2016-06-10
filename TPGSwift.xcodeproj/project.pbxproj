@@ -76,6 +76,7 @@
 		0B7CD8D41CE356DB00958468 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		0B7CD8D91CE357E000958468 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0B7CD8DA1CE357E000958468 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		0B91355C1D0AF1F800D70411 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0BC015171CEB70270096396F /* SPEC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPEC.bundle; sourceTree = "<group>"; };
 		0BC0151A1CEB713D0096396F /* LineColorJSONSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineColorJSONSpec.swift; sourceTree = "<group>"; };
 		0BC0151C1CEB71A00096396F /* SpecBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecBundle.swift; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		0B7CD8941CE332CA00958468 = {
 			isa = PBXGroup;
 			children = (
+				0B91355C1D0AF1F800D70411 /* Package.swift */,
 				0BD0D3D71CE4671800375C8C /* LICENSE */,
 				0BD0D3D81CE4671800375C8C /* README.md */,
 				0B5B82D51CE39DAD009BBD8F /* .travis.yml */,
