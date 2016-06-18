@@ -22,8 +22,6 @@ public struct ParsedNextDeparturesRecord: JSONMarshable {
 
         public let connectionWaitingTime: Double?
 
-        public let connection: ParsedConnection
-
         public let reliability: String
         public let characteristic: String
 
@@ -33,19 +31,15 @@ public struct ParsedNextDeparturesRecord: JSONMarshable {
                 let code = json["departureCode"] as? Double,
                 let waitingT = json["waintingTime"] as? Double,
                 let waitingTMS = json["waitingTimeMillis"] as? Double,
-                let connectionRaw = json["connection"] as? [String:AnyObject],
                 let rel = json["reliability"] as? String,
-                let ch = json[""] as? String else { return nil }
+                let ch = json["characteristics"] as? String else { return nil }
 
-
-            guard let connectionUnserialized = ParsedConnection(json: connectionRaw) else { return nil }
 
             departureCode = code
             waitingTime = waitingT
             waitingTimeMillis = waitingTMS
             reliability = rel
             characteristic = ch
-            connection = connectionUnserialized
 
             connectionWaitingTime = json["connectionWaitingTime"] as? Double
 
