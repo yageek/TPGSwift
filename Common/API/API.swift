@@ -31,3 +31,7 @@ public enum API {
     //MARK: Disruptions
     case GetDisruptions
 }
+
+public protocol JSONMarshable {
+    init?(json: [String:AnyObject])
+}

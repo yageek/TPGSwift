@@ -8,13 +8,13 @@
 
 import Foundation
 
-public struct ParsedDeviation {
+public struct ParsedDeviation: JSONMarshable {
 
-    let code: Double
-    let startStop: ParsedStopsRecord.ParsedStop?
-    let endStop: ParsedStopsRecord.ParsedStop?
+    public let code: Double
+    public let startStop: ParsedStopsRecord.ParsedStop?
+    public let endStop: ParsedStopsRecord.ParsedStop?
 
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard let deviationCode = json["deviationCode"] as? Double else { return nil }
 

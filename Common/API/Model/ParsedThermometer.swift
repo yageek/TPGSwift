@@ -8,20 +8,20 @@
 
 import Foundation
 
-public struct ParsedThermometer {
+public struct ParsedThermometer: JSONMarshable {
 
-    let timestamp: NSDate
-    let stop: ParsedStopsRecord
+    public let timestamp: NSDate
+    public let stop: ParsedStopsRecord
 
-    let lineCode: Double
-    let destinationName: String
-    let destinationCode: String
+    public let lineCode: Double
+    public let destinationName: String
+    public let destinationCode: String
 
-    let deviations: [ParsedDeviation]
-    let disruptions: [ParsedDisruption]
+    public let deviations: [ParsedDeviation]
+    public let disruptions: [ParsedDisruption]
 
 
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard let therm = json["thermometer"] as? [String: AnyObject] else { return nil }
 
@@ -55,19 +55,19 @@ public struct ParsedThermometer {
     }
 
 
-    public struct Step {
+    public struct Step: JSONMarshable {
 
-        let stop: ParsedStopsRecord
-        let departureCode: Double
-        let deviationCode: Double?
-        let timestamp: NSDate
-        let arrivalTime: Double
-        let reliability: String
-        let deviation: Bool
-        let visible: Bool
+        public let stop: ParsedStopsRecord
+        public let departureCode: Double
+        public let deviationCode: Double?
+        public let timestamp: NSDate
+        public let arrivalTime: Double
+        public let reliability: String
+        public let deviation: Bool
+        public let visible: Bool
 
 
-        init?(json: [String:AnyObject]) {
+        public init?(json: [String:AnyObject]) {
 
             guard let stopRaw = json["stop"] as? [String:AnyObject],
             let depCode = json["departureCode"] as? Double,

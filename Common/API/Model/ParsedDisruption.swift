@@ -8,16 +8,16 @@
 
 import Foundation
 
-public struct ParsedDisruption {
+public struct ParsedDisruption: JSONMarshable {
 
-    let code: String
-    let timestamp: NSDate
-    let place: String
-    let nature: String
-    let consequence: String
-    let stopName: String
+    public let code: String
+    public let timestamp: NSDate
+    public let place: String
+    public let nature: String
+    public let consequence: String
+    public let stopName: String
 
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard
                 let disruptionCode = json["disruptionCode"] as? String,

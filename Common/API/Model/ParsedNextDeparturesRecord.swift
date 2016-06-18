@@ -8,27 +8,26 @@
 
 import Foundation
 
-public struct ParsedNextDeparturesRecord {
+public struct ParsedNextDeparturesRecord: JSONMarshable {
 
-    let timestamp: NSDate
-    let stop: [ParsedStopsRecord.ParsedStop]
+    public let timestamp: NSDate
+    public let stop: ParsedStopsRecord.ParsedStop
+    public let departures: [ParsedDeparture]
 
-    public struct ParsedDeparture {
+    public struct ParsedDeparture: JSONMarshable {
 
-        let departureCode: Double
-        let waitingTime: Double
-        let waitingTimeMillis: Double
+        public let departureCode: Double
+        public let waitingTime: Double
+        public let waitingTimeMillis: Double
 
-        let connectionWaitingTime: Double?
+        public let connectionWaitingTime: Double?
 
-        let connection: ParsedConnection
+        public let connection: ParsedConnection
 
-        let reliability: String
-        let characteristic: String
+        public let reliability: String
+        public let characteristic: String
 
-
-        init?(json: [String:AnyObject]) {
-
+        public init?(json: [String:AnyObject]) {
 
             guard
                 let code = json["departureCode"] as? Double,
@@ -52,6 +51,23 @@ public struct ParsedNextDeparturesRecord {
 
         }
 
+    }
+
+
+    public init?(json: [String : AnyObject]) {
+
+        guard
+            let dateRaw = json["timestamp"] as? String,
+            let stopRaw = json["stop"] as? [String: AnyObject],
+            let departuresRaw = json["departures"] as? [[String:AnyObject]] else { return nil }
+
+        guard let date = API.TimestampFormatter.dateFromString(dateRaw) else { return nil }
+
+        guard let stopV = ParsedStopsRecord.ParsedStop(json: stopRaw) else { return nil }
+
+        timestamp = date
+        stop = stopV
+        departures = departuresRaw.flatMap { ParsedDeparture(json: $0) }
     }
 
 

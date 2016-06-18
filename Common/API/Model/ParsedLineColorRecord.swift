@@ -11,18 +11,18 @@ import Foundation
 /**
     ParsedLineColorRecord represents a set of `ParsedLineColor` objects.
  */
-public struct ParsedLineColorRecord {
+public struct ParsedLineColorRecord: JSONMarshable {
 
-    let timestamp: NSDate
+    public let timestamp: NSDate
 
-    let lineColors: [ParsedLineColor]
+    public let lineColors: [ParsedLineColor]
 
     /**
         Init for JSON.
 
         - parameter json: Initialize from a JSON object
      */
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard let timestamp = json["timestamp"] as? String, let colors = json["colors"] as? [[String:AnyObject]] else { return nil }
 
@@ -46,10 +46,10 @@ public struct ParsedLineColorRecord {
  */
 public struct ParsedLineColor {
 
-    let hexa: String
-    let lineCode: String
-    let background: String
-    let text: String
+    public let hexa: String
+    public let lineCode: String
+    public let background: String
+    public let text: String
 
     /**
      Init for JSON.

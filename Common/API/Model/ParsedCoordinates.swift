@@ -9,13 +9,13 @@
 import Foundation
 
 
-struct ParsedCoordinates {
+public struct ParsedCoordinates: JSONMarshable {
 
-    let latitude: Double
-    let longitude: Double
-    let referential: String
+    public let latitude: Double
+    public let longitude: Double
+    public let referential: String
 
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard
             let lat = json["latitude"] as? Double,

@@ -12,17 +12,17 @@ import Foundation
     ParsedConnection is a model containing the element from
     the API.
  */
-public struct ParsedConnection {
+public struct ParsedConnection: JSONMarshable {
 
-    let lineCode: String
-    let destinationName: String
-    let destinationCode: String
+    public let lineCode: String
+    public let destinationName: String
+    public let destinationCode: String
 
     /**
         Init for JSON.
         - parameter json: Initialize from a JSON object
      */
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard
             let lineCode = json["lineCode"] as? String,

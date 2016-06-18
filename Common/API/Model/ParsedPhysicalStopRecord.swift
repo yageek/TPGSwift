@@ -11,14 +11,14 @@ import Foundation
 /**
     ParsedPhysicalStopRecord represents a set of physical stops.
  */
-public struct ParsedPhysicalStopRecord {
+public struct ParsedPhysicalStopRecord: JSONMarshable {
 
-    public struct ParsePhysicalStopInfos {
-        let name: String
-        let code: String
-        let stops: [ParsedPhysicalStop]
+    public struct ParsePhysicalStopInfos: JSONMarshable {
+        public let name: String
+        public let code: String
+        public let stops: [ParsedPhysicalStop]
 
-        init?(json: [String:AnyObject]) {
+        public init?(json: [String:AnyObject]) {
 
             guard
                     let stopCode = json["stopCode"] as? String,
@@ -31,15 +31,15 @@ public struct ParsedPhysicalStopRecord {
         }
     }
 
-    public struct ParsedPhysicalStop {
+    public struct ParsedPhysicalStop: JSONMarshable {
 
-        let code: String
-        let name: String
+        public let code: String
+        public let name: String
 
-        let connections: [ParsedConnection]
-        let coordinates: ParsedCoordinates
+        public let connections: [ParsedConnection]
+        public let coordinates: ParsedCoordinates
 
-        init?(json: [String:AnyObject]) {
+        public init?(json: [String:AnyObject]) {
 
             guard
                     let physicalStopCode = json["physicalStopCode"] as? String,
@@ -58,10 +58,10 @@ public struct ParsedPhysicalStopRecord {
     }
 
 
-    let timestamp: NSDate
-    let stops: [ParsePhysicalStopInfos]
+    public let timestamp: NSDate
+    public let stops: [ParsePhysicalStopInfos]
 
-    init?(json: [String:AnyObject]) {
+    public init?(json: [String:AnyObject]) {
 
         guard let timestampValue = json["timestamp"] as? String, let stopsArray = json["stops"] as? [[String:AnyObject]] else { return nil }
 
