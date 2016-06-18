@@ -57,7 +57,7 @@ extension API {
             }
         }
 
-        let pathURL = API.baseURL.URLByAppendingPathComponent(result.path).URLByAppendingPathExtension("json")
+        let pathURL = API.HostURL.URLByAppendingPathComponent(result.path).URLByAppendingPathExtension("json")
         let components = NSURLComponents(URL: pathURL, resolvingAgainstBaseURL: true)
         components?.queryItems = parameters.map({ (key, value) -> NSURLQueryItem in
             return NSURLQueryItem(name: key, value: String(value))

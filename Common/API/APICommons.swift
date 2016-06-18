@@ -15,8 +15,8 @@ extension API {
         The API Key provided by the TPG.
      */
     public static var Key: String?
-    
-    public static let HostURL = "http://prod.ivtr-od.tpg.ch/v1"
+
+    public static let Host = "http://prod.ivtr-od.tpg.ch/v1"
 
     public static let TimestampFormatter: NSDateFormatter = {
         let formatter = NSDateFormatter()
@@ -24,5 +24,5 @@ extension API {
         return formatter
     }()
 
-    internal static let baseURL  = NSURL(string:HostURL)!
+    public static let HostURL  = NSURL(string:Host)!
 }
