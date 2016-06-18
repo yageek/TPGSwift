@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B237D341CE35BCC006AD14C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD8D91CE357E000958468 /* Nimble.framework */; };
-		0B237D351CE35BCC006AD14C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD8DA1CE357E000958468 /* Quick.framework */; };
+		0B153C501D16055C006234F9 /* ParseLineColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B153C4F1D16055C006234F9 /* ParseLineColorTests.swift */; };
+		0B153C521D16074A006234F9 /* ParseNextDeparturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B153C511D16074A006234F9 /* ParseNextDeparturesTests.swift */; };
 		0B237D411CE38329006AD14C /* ParsedStopsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B237D401CE38329006AD14C /* ParsedStopsRecord.swift */; };
 		0B237D431CE3834D006AD14C /* ParsedConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B237D421CE3834D006AD14C /* ParsedConnection.swift */; };
 		0B237D451CE38978006AD14C /* ParsedLineColorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B237D441CE38978006AD14C /* ParsedLineColorRecord.swift */; };
@@ -19,11 +19,7 @@
 		0B7CD8D11CE3530100958468 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD8CE1CE3530100958468 /* API.swift */; };
 		0B7CD8D21CE3530100958468 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD8CF1CE3530100958468 /* APICommons.swift */; };
 		0B7CD8D31CE3530100958468 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD8D01CE3530100958468 /* APIURLSerialization.swift */; };
-		0B7CD8D51CE356DB00958468 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = 0B7CD8D41CE356DB00958468 /* Cartfile.private */; };
-		0B7CD8DB1CE357E000958468 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0B7CD8D91CE357E000958468 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0B7CD8DC1CE357E000958468 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0B7CD8DA1CE357E000958468 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BC015181CEB70270096396F /* SPEC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BC015171CEB70270096396F /* SPEC.bundle */; };
-		0BC0151B1CEB713D0096396F /* LineColorJSONSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0151A1CEB713D0096396F /* LineColorJSONSpec.swift */; };
 		0BC0151D1CEB71A00096396F /* SpecBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0151C1CEB71A00096396F /* SpecBundle.swift */; };
 		0BD0D3DC1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3DB1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift */; };
 		0BD0D3DE1CE46C6100375C8C /* ParsedCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3DD1CE46C6100375C8C /* ParsedCoordinates.swift */; };
@@ -42,21 +38,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0B7CD8D81CE357BD00958468 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0B7CD8DB1CE357E000958468 /* Nimble.framework in CopyFiles */,
-				0B7CD8DC1CE357E000958468 /* Quick.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		0B153C4F1D16055C006234F9 /* ParseLineColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLineColorTests.swift; sourceTree = "<group>"; };
+		0B153C511D16074A006234F9 /* ParseNextDeparturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseNextDeparturesTests.swift; sourceTree = "<group>"; };
 		0B237D311CE35867006AD14C /* TPGSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPGSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B237D401CE38329006AD14C /* ParsedStopsRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedStopsRecord.swift; sourceTree = "<group>"; };
@@ -73,12 +57,10 @@
 		0B7CD8CE1CE3530100958468 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0B7CD8CF1CE3530100958468 /* APICommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommons.swift; sourceTree = "<group>"; };
 		0B7CD8D01CE3530100958468 /* APIURLSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLSerialization.swift; sourceTree = "<group>"; };
-		0B7CD8D41CE356DB00958468 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		0B7CD8D91CE357E000958468 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		0B7CD8DA1CE357E000958468 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		0B91355C1D0AF1F800D70411 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0BC015171CEB70270096396F /* SPEC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPEC.bundle; sourceTree = "<group>"; };
-		0BC0151A1CEB713D0096396F /* LineColorJSONSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineColorJSONSpec.swift; sourceTree = "<group>"; };
 		0BC0151C1CEB71A00096396F /* SpecBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecBundle.swift; sourceTree = "<group>"; };
 		0BD0D3D71CE4671800375C8C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BD0D3D81CE4671800375C8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -102,8 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7CD8A91CE332CA00958468 /* TPGSwift.framework in Frameworks */,
-				0B237D341CE35BCC006AD14C /* Nimble.framework in Frameworks */,
-				0B237D351CE35BCC006AD14C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +116,6 @@
 				0B237D3C1CE37CBF006AD14C /* .gitignore */,
 				0B7CD8D91CE357E000958468 /* Nimble.framework */,
 				0B7CD8DA1CE357E000958468 /* Quick.framework */,
-				0B7CD8D41CE356DB00958468 /* Cartfile.private */,
 				0B7CD8BB1CE3345800958468 /* .swiftlint.yml */,
 				0B7CD8B81CE332D900958468 /* Common */,
 				0B7CD8A01CE332CA00958468 /* TPGSwift */,
@@ -197,8 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				0BC015171CEB70270096396F /* SPEC.bundle */,
-				0BC0151A1CEB713D0096396F /* LineColorJSONSpec.swift */,
 				0BC0151C1CEB71A00096396F /* SpecBundle.swift */,
+				0B153C4F1D16055C006234F9 /* ParseLineColorTests.swift */,
+				0B153C511D16074A006234F9 /* ParseNextDeparturesTests.swift */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -243,7 +223,6 @@
 				0B7CD8A41CE332CA00958468 /* Sources */,
 				0B7CD8A51CE332CA00958468 /* Frameworks */,
 				0B7CD8A61CE332CA00958468 /* Resources */,
-				0B7CD8D81CE357BD00958468 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -296,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7CD8D51CE356DB00958468 /* Cartfile.private in Resources */,
 				0B7CD8BC1CE3345800958468 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,8 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B153C501D16055C006234F9 /* ParseLineColorTests.swift in Sources */,
 				0BC0151D1CEB71A00096396F /* SpecBundle.swift in Sources */,
-				0BC0151B1CEB713D0096396F /* LineColorJSONSpec.swift in Sources */,
+				0B153C521D16074A006234F9 /* ParseNextDeparturesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

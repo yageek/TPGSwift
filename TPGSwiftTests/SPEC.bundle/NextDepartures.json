@@ -1,0 +1,209 @@
+{
+    "timestamp":"2016-06-19T00:46:55+0200",
+    "stop":{
+        "stopCode":"31DC",
+        "stopName":"31 Décembre",
+        "connections":[
+                       {
+                       "lineCode":"1",
+                       "destinationName":"Jar.-Botanique",
+                       "destinationCode":"JAR. BOTANIQUE"
+                       },
+                       {
+                       "lineCode":"1",
+                       "destinationName":"Petit-Bel-Air",
+                       "destinationCode":"PETIT-BEL-AIR"
+                       },
+                       {
+                       "lineCode":"9",
+                       "destinationName":"Gare Cornavin",
+                       "destinationCode":"GARE CORNAVIN"
+                       },
+                       {
+                       "lineCode":"9",
+                       "destinationName":"Petit-Bel-Air",
+                       "destinationCode":"PETIT-BEL-AIR"
+                       },
+                       {
+                       "lineCode":"9",
+                       "destinationName":"Tours Lignon",
+                       "destinationCode":"TOURS LIGNON"
+                       },
+                       {
+                       "lineCode":"33",
+                       "destinationName":"Puplinge",
+                       "destinationCode":"PUPLINGE-MAIRIE"
+                       },
+                       {
+                       "lineCode":"33",
+                       "destinationName":"Rive",
+                       "destinationCode":"RIVE"
+                       },
+                       {
+                       "lineCode":"A",
+                       "destinationName":"Gy",
+                       "destinationCode":"GY"
+                       },
+                       {
+                       "lineCode":"A",
+                       "destinationName":"Gy - Corsinge",
+                       "destinationCode":"GY - CORSINGE"
+                       },
+                       {
+                       "lineCode":"A",
+                       "destinationName":"Rive",
+                       "destinationCode":"RIVE"
+                       },
+                       {
+                       "lineCode":"NP",
+                       "destinationName":"Corsier-Village",
+                       "destinationCode":"CORSIER-VILLAGE"
+                       }
+                       ]
+    },
+    "departures":[
+                  {
+                  "departureCode":112384,
+                  "timestamp":"2016-06-19T00:56:55+0200",
+                  "waitingTimeMillis":614000,
+                  "waitingTime":"10",
+                  "line":{
+                  "lineCode":"A",
+                  "destinationName":"Rive",
+                  "destinationCode":"RIVE"
+                  },
+                  "reliability":"F",
+                  "characteristics":"PMR",
+                  "vehiculeType":"AB",
+                  "vehiculeNo":529
+                  },
+                  {
+                  "departureCode":108905,
+                  "timestamp":"2016-06-19T00:59:55+0200",
+                  "waitingTimeMillis":805000,
+                  "waitingTime":"13",
+                  "line":{
+                  "lineCode":"9",
+                  "destinationName":"Gare Cornavin",
+                  "destinationCode":"GARE CORNAVIN"
+                  },
+                  "reliability":"F",
+                  "characteristics":"PMR",
+                  "vehiculeType":"ABA",
+                  "vehiculeNo":195
+                  },
+                  {
+                  "departureCode":110967,
+                  "timestamp":"2016-06-19T01:05:55+0200",
+                  "waitingTimeMillis":1154000,
+                  "waitingTime":"19",
+                  "line":{
+                  "lineCode":"9",
+                  "destinationName":"Petit-Bel-Air",
+                  "destinationCode":"PETIT-BEL-AIR"
+                  },
+                  "reliability":"F",
+                  "characteristics":"PMR",
+                  "vehiculeType":"ABA",
+                  "vehiculeNo":1131
+                  },
+                  {
+                  "departureCode":110994,
+                  "timestamp":"2016-06-19T01:29:55+0200",
+                  "waitingTimeMillis":2605000,
+                  "waitingTime":"43",
+                  "line":{
+                  "lineCode":"9",
+                  "destinationName":"Gare Cornavin",
+                  "destinationCode":"GARE CORNAVIN"
+                  },
+                  "reliability":"F",
+                  "characteristics":"PMR",
+                  "vehiculeType":"ABA",
+                  "vehiculeNo":1131
+                  },
+                  {
+                  "departureCode":9418,
+                  "timestamp":"2016-06-19T01:33:55+0200",
+                  "waitingTimeMillis":2855000,
+                  "waitingTime":"47",
+                  "line":{
+                  "lineCode":"9",
+                  "destinationName":"Petit-Bel-Air",
+                  "destinationCode":"PETIT-BEL-AIR"
+                  },
+                  "reliability":"F"
+                  },
+                  {
+                  "departureCode":129997,
+                  "timestamp":"2016-06-19T01:56:55+0200",
+                  "waitingTimeMillis":4214000,
+                  "waitingTime":"&gt;1h",
+                  "line":{
+                  "lineCode":"NP",
+                  "destinationName":"Corsier-Village",
+                  "destinationCode":"CORSIER-VILLAGE"
+                  },
+                  "reliability":"F",
+                  "characteristics":"PMR",
+                  "vehiculeType":"AB",
+                  "vehiculeNo":21906
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"1",
+                  "destinationName":"Jar.-Botanique",
+                  "destinationCode":"JAR. BOTANIQUE"
+                  }
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"1",
+                  "destinationName":"Petit-Bel-Air",
+                  "destinationCode":"PETIT-BEL-AIR"
+                  }
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"9",
+                  "destinationName":"Tours Lignon",
+                  "destinationCode":"TOURS LIGNON"
+                  }
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"33",
+                  "destinationName":"Puplinge",
+                  "destinationCode":"PUPLINGE-MAIRIE"
+                  }
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"33",
+                  "destinationName":"Rive",
+                  "destinationCode":"RIVE"
+                  }
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"A",
+                  "destinationName":"Gy",
+                  "destinationCode":"GY"
+                  }
+                  },
+                  {
+                  "waitingTime":"no more",
+                  "line":{
+                  "lineCode":"A",
+                  "destinationName":"Gy - Corsinge",
+                  "destinationCode":"GY - CORSINGE"
+                  }
+                  }
+                  ]
+}
