@@ -6,7 +6,7 @@
 //  Copyright © 2016 yageek's company. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /**
     API is the enum used to called the different endpoints.
