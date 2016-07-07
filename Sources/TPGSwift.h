@@ -6,7 +6,7 @@
 //  Copyright © 2016 yageek's company. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for TPGSwift.
 FOUNDATION_EXPORT double TPGSwiftVersionNumber;

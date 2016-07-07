@@ -7,25 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B153C501D16055C006234F9 /* ParseLineColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B153C4F1D16055C006234F9 /* ParseLineColorTests.swift */; };
-		0B153C521D16074A006234F9 /* ParseNextDeparturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B153C511D16074A006234F9 /* ParseNextDeparturesTests.swift */; };
-		0B237D411CE38329006AD14C /* ParsedStopsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B237D401CE38329006AD14C /* ParsedStopsRecord.swift */; };
-		0B237D431CE3834D006AD14C /* ParsedConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B237D421CE3834D006AD14C /* ParsedConnection.swift */; };
-		0B237D451CE38978006AD14C /* ParsedLineColorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B237D441CE38978006AD14C /* ParsedLineColorRecord.swift */; };
-		0B41EC831CEB1B120004D5C2 /* ParsedThermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B41EC821CEB1B120004D5C2 /* ParsedThermometer.swift */; };
-		0B7CD8A21CE332CA00958468 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7CD8A11CE332CA00958468 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B7CD8A91CE332CA00958468 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD89E1CE332CA00958468 /* TPGSwift.framework */; };
-		0B7CD8BC1CE3345800958468 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0B7CD8BB1CE3345800958468 /* .swiftlint.yml */; };
-		0B7CD8D11CE3530100958468 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD8CE1CE3530100958468 /* API.swift */; };
-		0B7CD8D21CE3530100958468 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD8CF1CE3530100958468 /* APICommons.swift */; };
-		0B7CD8D31CE3530100958468 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD8D01CE3530100958468 /* APIURLSerialization.swift */; };
-		0BC015181CEB70270096396F /* SPEC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BC015171CEB70270096396F /* SPEC.bundle */; };
-		0BC0151D1CEB71A00096396F /* SpecBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0151C1CEB71A00096396F /* SpecBundle.swift */; };
-		0BD0D3DC1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3DB1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift */; };
-		0BD0D3DE1CE46C6100375C8C /* ParsedCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3DD1CE46C6100375C8C /* ParsedCoordinates.swift */; };
-		0BD0D3E01CE471C100375C8C /* ParsedNextDeparturesRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3DF1CE471C100375C8C /* ParsedNextDeparturesRecord.swift */; };
-		0BD0D3E21CE4759900375C8C /* ParsedDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3E11CE4759900375C8C /* ParsedDeviation.swift */; };
-		0BD0D3E41CE476FF00375C8C /* ParsedDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D3E31CE476FF00375C8C /* ParsedDisruption.swift */; };
+		0BCAD4941D2EA22000C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
+		0BCAD4951D2EA22000C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
+		0BCAD4961D2EA22000C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
+		0BCAD4981D2EA22000C3FDC4 /* ParsedConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48A1D2EA22000C3FDC4 /* ParsedConnection.swift */; };
+		0BCAD4991D2EA22000C3FDC4 /* ParsedCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48B1D2EA22000C3FDC4 /* ParsedCoordinates.swift */; };
+		0BCAD49A1D2EA22000C3FDC4 /* ParsedDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48C1D2EA22000C3FDC4 /* ParsedDeviation.swift */; };
+		0BCAD49B1D2EA22000C3FDC4 /* ParsedDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48D1D2EA22000C3FDC4 /* ParsedDisruption.swift */; };
+		0BCAD49C1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48E1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift */; };
+		0BCAD49D1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48F1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift */; };
+		0BCAD49E1D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4901D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift */; };
+		0BCAD49F1D2EA22000C3FDC4 /* ParsedStopsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4911D2EA22000C3FDC4 /* ParsedStopsRecord.swift */; };
+		0BCAD4A01D2EA22000C3FDC4 /* ParsedThermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4921D2EA22000C3FDC4 /* ParsedThermometer.swift */; };
+		0BCAD4A11D2EA22000C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BCAD4C91D2EA54C00C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
+		0BCAD4CA1D2EA54C00C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
+		0BCAD4CB1D2EA54C00C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
+		0BCAD4CC1D2EA54C00C3FDC4 /* ParsedConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48A1D2EA22000C3FDC4 /* ParsedConnection.swift */; };
+		0BCAD4CD1D2EA54C00C3FDC4 /* ParsedCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48B1D2EA22000C3FDC4 /* ParsedCoordinates.swift */; };
+		0BCAD4CE1D2EA54C00C3FDC4 /* ParsedDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48C1D2EA22000C3FDC4 /* ParsedDeviation.swift */; };
+		0BCAD4CF1D2EA54C00C3FDC4 /* ParsedDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48D1D2EA22000C3FDC4 /* ParsedDisruption.swift */; };
+		0BCAD4D01D2EA54C00C3FDC4 /* ParsedLineColorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48E1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift */; };
+		0BCAD4D11D2EA54C00C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48F1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift */; };
+		0BCAD4D21D2EA54C00C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4901D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift */; };
+		0BCAD4D31D2EA54C00C3FDC4 /* ParsedStopsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4911D2EA22000C3FDC4 /* ParsedStopsRecord.swift */; };
+		0BCAD4D41D2EA54C00C3FDC4 /* ParsedThermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4921D2EA22000C3FDC4 /* ParsedThermometer.swift */; };
+		0BCAD4D51D2EA54C00C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
+		0BCAD4D61D2EA54C00C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
+		0BCAD4D71D2EA54C00C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
+		0BCAD4D81D2EA54C00C3FDC4 /* ParsedConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48A1D2EA22000C3FDC4 /* ParsedConnection.swift */; };
+		0BCAD4D91D2EA54C00C3FDC4 /* ParsedCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48B1D2EA22000C3FDC4 /* ParsedCoordinates.swift */; };
+		0BCAD4DA1D2EA54C00C3FDC4 /* ParsedDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48C1D2EA22000C3FDC4 /* ParsedDeviation.swift */; };
+		0BCAD4DB1D2EA54C00C3FDC4 /* ParsedDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48D1D2EA22000C3FDC4 /* ParsedDisruption.swift */; };
+		0BCAD4DC1D2EA54C00C3FDC4 /* ParsedLineColorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48E1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift */; };
+		0BCAD4DD1D2EA54C00C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48F1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift */; };
+		0BCAD4DE1D2EA54C00C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4901D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift */; };
+		0BCAD4DF1D2EA54C00C3FDC4 /* ParsedStopsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4911D2EA22000C3FDC4 /* ParsedStopsRecord.swift */; };
+		0BCAD4E01D2EA54C00C3FDC4 /* ParsedThermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4921D2EA22000C3FDC4 /* ParsedThermometer.swift */; };
+		0BCAD4E11D2EA54D00C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
+		0BCAD4E21D2EA54D00C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
+		0BCAD4E31D2EA54D00C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
+		0BCAD4E41D2EA54D00C3FDC4 /* ParsedConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48A1D2EA22000C3FDC4 /* ParsedConnection.swift */; };
+		0BCAD4E51D2EA54D00C3FDC4 /* ParsedCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48B1D2EA22000C3FDC4 /* ParsedCoordinates.swift */; };
+		0BCAD4E61D2EA54D00C3FDC4 /* ParsedDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48C1D2EA22000C3FDC4 /* ParsedDeviation.swift */; };
+		0BCAD4E71D2EA54D00C3FDC4 /* ParsedDisruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48D1D2EA22000C3FDC4 /* ParsedDisruption.swift */; };
+		0BCAD4E81D2EA54D00C3FDC4 /* ParsedLineColorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48E1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift */; };
+		0BCAD4E91D2EA54D00C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD48F1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift */; };
+		0BCAD4EA1D2EA54D00C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4901D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift */; };
+		0BCAD4EB1D2EA54D00C3FDC4 /* ParsedStopsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4911D2EA22000C3FDC4 /* ParsedStopsRecord.swift */; };
+		0BCAD4EC1D2EA54D00C3FDC4 /* ParsedThermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4921D2EA22000C3FDC4 /* ParsedThermometer.swift */; };
+		0BCAD4ED1D2EA55200C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BCAD4EE1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BCAD4EF1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,34 +73,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B153C4F1D16055C006234F9 /* ParseLineColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLineColorTests.swift; sourceTree = "<group>"; };
-		0B153C511D16074A006234F9 /* ParseNextDeparturesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseNextDeparturesTests.swift; sourceTree = "<group>"; };
-		0B237D311CE35867006AD14C /* TPGSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPGSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		0B237D401CE38329006AD14C /* ParsedStopsRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedStopsRecord.swift; sourceTree = "<group>"; };
-		0B237D421CE3834D006AD14C /* ParsedConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedConnection.swift; sourceTree = "<group>"; };
-		0B237D441CE38978006AD14C /* ParsedLineColorRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedLineColorRecord.swift; sourceTree = "<group>"; };
-		0B41EC821CEB1B120004D5C2 /* ParsedThermometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedThermometer.swift; sourceTree = "<group>"; };
 		0B5B82D51CE39DAD009BBD8F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		0B7CD89E1CE332CA00958468 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B7CD8A11CE332CA00958468 /* TPGSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPGSwift.h; sourceTree = "<group>"; };
-		0B7CD8A31CE332CA00958468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7CD8A81CE332CA00958468 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B7CD8AF1CE332CA00958468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7CD8BB1CE3345800958468 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		0B7CD8CE1CE3530100958468 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		0B7CD8CF1CE3530100958468 /* APICommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommons.swift; sourceTree = "<group>"; };
-		0B7CD8D01CE3530100958468 /* APIURLSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLSerialization.swift; sourceTree = "<group>"; };
 		0B91355C1D0AF1F800D70411 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		0BC015171CEB70270096396F /* SPEC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPEC.bundle; sourceTree = "<group>"; };
-		0BC0151C1CEB71A00096396F /* SpecBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecBundle.swift; sourceTree = "<group>"; };
+		0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TPGSwift.podspec; sourceTree = "<group>"; };
+		0BCAD4861D2EA22000C3FDC4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommons.swift; sourceTree = "<group>"; };
+		0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLSerialization.swift; sourceTree = "<group>"; };
+		0BCAD4891D2EA22000C3FDC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BCAD48A1D2EA22000C3FDC4 /* ParsedConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedConnection.swift; sourceTree = "<group>"; };
+		0BCAD48B1D2EA22000C3FDC4 /* ParsedCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedCoordinates.swift; sourceTree = "<group>"; };
+		0BCAD48C1D2EA22000C3FDC4 /* ParsedDeviation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedDeviation.swift; sourceTree = "<group>"; };
+		0BCAD48D1D2EA22000C3FDC4 /* ParsedDisruption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedDisruption.swift; sourceTree = "<group>"; };
+		0BCAD48E1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedLineColorRecord.swift; sourceTree = "<group>"; };
+		0BCAD48F1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedNextDeparturesRecord.swift; sourceTree = "<group>"; };
+		0BCAD4901D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedPhysicalStopRecord.swift; sourceTree = "<group>"; };
+		0BCAD4911D2EA22000C3FDC4 /* ParsedStopsRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedStopsRecord.swift; sourceTree = "<group>"; };
+		0BCAD4921D2EA22000C3FDC4 /* ParsedThermometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedThermometer.swift; sourceTree = "<group>"; };
+		0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPGSwift.h; sourceTree = "<group>"; };
+		0BCAD4A71D2EA3FD00C3FDC4 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD0D3D71CE4671800375C8C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BD0D3D81CE4671800375C8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0BD0D3DB1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedPhysicalStopRecord.swift; sourceTree = "<group>"; };
-		0BD0D3DD1CE46C6100375C8C /* ParsedCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedCoordinates.swift; sourceTree = "<group>"; };
-		0BD0D3DF1CE471C100375C8C /* ParsedNextDeparturesRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedNextDeparturesRecord.swift; sourceTree = "<group>"; };
-		0BD0D3E11CE4759900375C8C /* ParsedDeviation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedDeviation.swift; sourceTree = "<group>"; };
-		0BD0D3E31CE476FF00375C8C /* ParsedDisruption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedDisruption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,37 +117,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BCAD4A31D2EA3FD00C3FDC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4B01D2EA46500C3FDC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4BD1D2EA4BF00C3FDC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B237D3F1CE38245006AD14C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0B237D401CE38329006AD14C /* ParsedStopsRecord.swift */,
-				0B237D421CE3834D006AD14C /* ParsedConnection.swift */,
-				0B237D441CE38978006AD14C /* ParsedLineColorRecord.swift */,
-				0BD0D3DB1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift */,
-				0BD0D3DD1CE46C6100375C8C /* ParsedCoordinates.swift */,
-				0BD0D3DF1CE471C100375C8C /* ParsedNextDeparturesRecord.swift */,
-				0BD0D3E11CE4759900375C8C /* ParsedDeviation.swift */,
-				0BD0D3E31CE476FF00375C8C /* ParsedDisruption.swift */,
-				0B41EC821CEB1B120004D5C2 /* ParsedThermometer.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		0B7CD8941CE332CA00958468 = {
 			isa = PBXGroup;
 			children = (
+				0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */,
 				0B91355C1D0AF1F800D70411 /* Package.swift */,
 				0BD0D3D71CE4671800375C8C /* LICENSE */,
 				0BD0D3D81CE4671800375C8C /* README.md */,
 				0B5B82D51CE39DAD009BBD8F /* .travis.yml */,
 				0B237D3C1CE37CBF006AD14C /* .gitignore */,
 				0B7CD8BB1CE3345800958468 /* .swiftlint.yml */,
-				0B7CD8B81CE332D900958468 /* Common */,
-				0B7CD8A01CE332CA00958468 /* TPGSwift */,
-				0B7CD8AC1CE332CA00958468 /* TPGSwiftTests */,
+				0BCAD4851D2EA22000C3FDC4 /* Sources */,
 				0B7CD89F1CE332CA00958468 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,58 +161,32 @@
 			children = (
 				0B7CD89E1CE332CA00958468 /* TPGSwift.framework */,
 				0B7CD8A81CE332CA00958468 /* TPGSwiftTests.xctest */,
+				0BCAD4A71D2EA3FD00C3FDC4 /* TPGSwift.framework */,
+				0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */,
+				0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B7CD8A01CE332CA00958468 /* TPGSwift */ = {
+		0BCAD4851D2EA22000C3FDC4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0B7CD8A11CE332CA00958468 /* TPGSwift.h */,
-				0B7CD8A31CE332CA00958468 /* Info.plist */,
+				0BCAD4861D2EA22000C3FDC4 /* API.swift */,
+				0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */,
+				0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */,
+				0BCAD4891D2EA22000C3FDC4 /* Info.plist */,
+				0BCAD48A1D2EA22000C3FDC4 /* ParsedConnection.swift */,
+				0BCAD48B1D2EA22000C3FDC4 /* ParsedCoordinates.swift */,
+				0BCAD48C1D2EA22000C3FDC4 /* ParsedDeviation.swift */,
+				0BCAD48D1D2EA22000C3FDC4 /* ParsedDisruption.swift */,
+				0BCAD48E1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift */,
+				0BCAD48F1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift */,
+				0BCAD4901D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift */,
+				0BCAD4911D2EA22000C3FDC4 /* ParsedStopsRecord.swift */,
+				0BCAD4921D2EA22000C3FDC4 /* ParsedThermometer.swift */,
+				0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */,
 			);
-			path = TPGSwift;
-			sourceTree = "<group>";
-		};
-		0B7CD8AC1CE332CA00958468 /* TPGSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				0BC015191CEB712D0096396F /* JSON */,
-				0B7CD8AF1CE332CA00958468 /* Info.plist */,
-				0B237D311CE35867006AD14C /* TPGSwiftTests-Bridging-Header.h */,
-			);
-			path = TPGSwiftTests;
-			sourceTree = "<group>";
-		};
-		0B7CD8B81CE332D900958468 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				0B7CD8CD1CE3530100958468 /* API */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		0B7CD8CD1CE3530100958468 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				0B237D3F1CE38245006AD14C /* Model */,
-				0B7CD8CE1CE3530100958468 /* API.swift */,
-				0B7CD8CF1CE3530100958468 /* APICommons.swift */,
-				0B7CD8D01CE3530100958468 /* APIURLSerialization.swift */,
-			);
-			name = API;
-			path = Common/API;
-			sourceTree = "<group>";
-		};
-		0BC015191CEB712D0096396F /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				0BC015171CEB70270096396F /* SPEC.bundle */,
-				0BC0151C1CEB71A00096396F /* SpecBundle.swift */,
-				0B153C4F1D16055C006234F9 /* ParseLineColorTests.swift */,
-				0B153C511D16074A006234F9 /* ParseNextDeparturesTests.swift */,
-			);
-			name = JSON;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +196,31 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7CD8A21CE332CA00958468 /* TPGSwift.h in Headers */,
+				0BCAD4A11D2EA22000C3FDC4 /* TPGSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4A41D2EA3FD00C3FDC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCAD4EF1D2EA55300C3FDC4 /* TPGSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4B11D2EA46500C3FDC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCAD4EE1D2EA55300C3FDC4 /* TPGSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4BE1D2EA4BF00C3FDC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCAD4ED1D2EA55200C3FDC4 /* TPGSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +264,60 @@
 			productReference = 0B7CD8A81CE332CA00958468 /* TPGSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0BCAD4A61D2EA3FD00C3FDC4 /* TPGSwiftWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BCAD4AE1D2EA3FD00C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftWatch" */;
+			buildPhases = (
+				0BCAD4A21D2EA3FD00C3FDC4 /* Sources */,
+				0BCAD4A31D2EA3FD00C3FDC4 /* Frameworks */,
+				0BCAD4A41D2EA3FD00C3FDC4 /* Headers */,
+				0BCAD4A51D2EA3FD00C3FDC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPGSwiftWatch;
+			productName = TPGSwiftWatch;
+			productReference = 0BCAD4A71D2EA3FD00C3FDC4 /* TPGSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0BCAD4B31D2EA46500C3FDC4 /* TPGSwiftTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BCAD4B91D2EA46500C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftTv" */;
+			buildPhases = (
+				0BCAD4AF1D2EA46500C3FDC4 /* Sources */,
+				0BCAD4B01D2EA46500C3FDC4 /* Frameworks */,
+				0BCAD4B11D2EA46500C3FDC4 /* Headers */,
+				0BCAD4B21D2EA46500C3FDC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPGSwiftTv;
+			productName = TPGSwiftTv;
+			productReference = 0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0BCAD4C01D2EA4BF00C3FDC4 /* TPGSwiftOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BCAD4C61D2EA4BF00C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftOSX" */;
+			buildPhases = (
+				0BCAD4BC1D2EA4BF00C3FDC4 /* Sources */,
+				0BCAD4BD1D2EA4BF00C3FDC4 /* Frameworks */,
+				0BCAD4BE1D2EA4BF00C3FDC4 /* Headers */,
+				0BCAD4BF1D2EA4BF00C3FDC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPGSwiftOSX;
+			productName = TPGSwiftOSX;
+			productReference = 0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +332,15 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					0B7CD8A71CE332CA00958468 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0BCAD4A61D2EA3FD00C3FDC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0BCAD4B31D2EA46500C3FDC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0BCAD4C01D2EA4BF00C3FDC4 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -262,6 +359,9 @@
 			targets = (
 				0B7CD89D1CE332CA00958468 /* TPGSwift */,
 				0B7CD8A71CE332CA00958468 /* TPGSwiftTests */,
+				0BCAD4A61D2EA3FD00C3FDC4 /* TPGSwiftWatch */,
+				0BCAD4B31D2EA46500C3FDC4 /* TPGSwiftTv */,
+				0BCAD4C01D2EA4BF00C3FDC4 /* TPGSwiftOSX */,
 			);
 		};
 /* End PBXProject section */
@@ -271,7 +371,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7CD8BC1CE3345800958468 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +378,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC015181CEB70270096396F /* SPEC.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4A51D2EA3FD00C3FDC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4B21D2EA46500C3FDC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4BF1D2EA4BF00C3FDC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,18 +426,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD0D3E01CE471C100375C8C /* ParsedNextDeparturesRecord.swift in Sources */,
-				0BD0D3E41CE476FF00375C8C /* ParsedDisruption.swift in Sources */,
-				0B41EC831CEB1B120004D5C2 /* ParsedThermometer.swift in Sources */,
-				0BD0D3E21CE4759900375C8C /* ParsedDeviation.swift in Sources */,
-				0B237D431CE3834D006AD14C /* ParsedConnection.swift in Sources */,
-				0B237D411CE38329006AD14C /* ParsedStopsRecord.swift in Sources */,
-				0BD0D3DC1CE46B0000375C8C /* ParsedPhysicalStopRecord.swift in Sources */,
-				0B7CD8D11CE3530100958468 /* API.swift in Sources */,
-				0BD0D3DE1CE46C6100375C8C /* ParsedCoordinates.swift in Sources */,
-				0B237D451CE38978006AD14C /* ParsedLineColorRecord.swift in Sources */,
-				0B7CD8D31CE3530100958468 /* APIURLSerialization.swift in Sources */,
-				0B7CD8D21CE3530100958468 /* APICommons.swift in Sources */,
+				0BCAD4981D2EA22000C3FDC4 /* ParsedConnection.swift in Sources */,
+				0BCAD49D1D2EA22000C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */,
+				0BCAD4991D2EA22000C3FDC4 /* ParsedCoordinates.swift in Sources */,
+				0BCAD49A1D2EA22000C3FDC4 /* ParsedDeviation.swift in Sources */,
+				0BCAD49F1D2EA22000C3FDC4 /* ParsedStopsRecord.swift in Sources */,
+				0BCAD49E1D2EA22000C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */,
+				0BCAD49C1D2EA22000C3FDC4 /* ParsedLineColorRecord.swift in Sources */,
+				0BCAD4961D2EA22000C3FDC4 /* APIURLSerialization.swift in Sources */,
+				0BCAD4941D2EA22000C3FDC4 /* API.swift in Sources */,
+				0BCAD4A01D2EA22000C3FDC4 /* ParsedThermometer.swift in Sources */,
+				0BCAD49B1D2EA22000C3FDC4 /* ParsedDisruption.swift in Sources */,
+				0BCAD4951D2EA22000C3FDC4 /* APICommons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +445,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B153C501D16055C006234F9 /* ParseLineColorTests.swift in Sources */,
-				0BC0151D1CEB71A00096396F /* SpecBundle.swift in Sources */,
-				0B153C521D16074A006234F9 /* ParseNextDeparturesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4A21D2EA3FD00C3FDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCAD4E41D2EA54D00C3FDC4 /* ParsedConnection.swift in Sources */,
+				0BCAD4E91D2EA54D00C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */,
+				0BCAD4E51D2EA54D00C3FDC4 /* ParsedCoordinates.swift in Sources */,
+				0BCAD4E61D2EA54D00C3FDC4 /* ParsedDeviation.swift in Sources */,
+				0BCAD4EB1D2EA54D00C3FDC4 /* ParsedStopsRecord.swift in Sources */,
+				0BCAD4EA1D2EA54D00C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */,
+				0BCAD4E81D2EA54D00C3FDC4 /* ParsedLineColorRecord.swift in Sources */,
+				0BCAD4E31D2EA54D00C3FDC4 /* APIURLSerialization.swift in Sources */,
+				0BCAD4E11D2EA54D00C3FDC4 /* API.swift in Sources */,
+				0BCAD4EC1D2EA54D00C3FDC4 /* ParsedThermometer.swift in Sources */,
+				0BCAD4E71D2EA54D00C3FDC4 /* ParsedDisruption.swift in Sources */,
+				0BCAD4E21D2EA54D00C3FDC4 /* APICommons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4AF1D2EA46500C3FDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCAD4D81D2EA54C00C3FDC4 /* ParsedConnection.swift in Sources */,
+				0BCAD4DD1D2EA54C00C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */,
+				0BCAD4D91D2EA54C00C3FDC4 /* ParsedCoordinates.swift in Sources */,
+				0BCAD4DA1D2EA54C00C3FDC4 /* ParsedDeviation.swift in Sources */,
+				0BCAD4DF1D2EA54C00C3FDC4 /* ParsedStopsRecord.swift in Sources */,
+				0BCAD4DE1D2EA54C00C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */,
+				0BCAD4DC1D2EA54C00C3FDC4 /* ParsedLineColorRecord.swift in Sources */,
+				0BCAD4D71D2EA54C00C3FDC4 /* APIURLSerialization.swift in Sources */,
+				0BCAD4D51D2EA54C00C3FDC4 /* API.swift in Sources */,
+				0BCAD4E01D2EA54C00C3FDC4 /* ParsedThermometer.swift in Sources */,
+				0BCAD4DB1D2EA54C00C3FDC4 /* ParsedDisruption.swift in Sources */,
+				0BCAD4D61D2EA54C00C3FDC4 /* APICommons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BCAD4BC1D2EA4BF00C3FDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCAD4CC1D2EA54C00C3FDC4 /* ParsedConnection.swift in Sources */,
+				0BCAD4D11D2EA54C00C3FDC4 /* ParsedNextDeparturesRecord.swift in Sources */,
+				0BCAD4CD1D2EA54C00C3FDC4 /* ParsedCoordinates.swift in Sources */,
+				0BCAD4CE1D2EA54C00C3FDC4 /* ParsedDeviation.swift in Sources */,
+				0BCAD4D31D2EA54C00C3FDC4 /* ParsedStopsRecord.swift in Sources */,
+				0BCAD4D21D2EA54C00C3FDC4 /* ParsedPhysicalStopRecord.swift in Sources */,
+				0BCAD4D01D2EA54C00C3FDC4 /* ParsedLineColorRecord.swift in Sources */,
+				0BCAD4CB1D2EA54C00C3FDC4 /* APIURLSerialization.swift in Sources */,
+				0BCAD4C91D2EA54C00C3FDC4 /* API.swift in Sources */,
+				0BCAD4D41D2EA54C00C3FDC4 /* ParsedThermometer.swift in Sources */,
+				0BCAD4CF1D2EA54C00C3FDC4 /* ParsedDisruption.swift in Sources */,
+				0BCAD4CA1D2EA54C00C3FDC4 /* APICommons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +615,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TPGSwift/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -461,7 +634,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TPGSwift/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -504,6 +677,126 @@
 			};
 			name = Release;
 		};
+		0BCAD4AC1D2EA3FD00C3FDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
+				PRODUCT_NAME = TPGSwift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		0BCAD4AD1D2EA3FD00C3FDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
+				PRODUCT_NAME = TPGSwift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		0BCAD4BA1D2EA46500C3FDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
+				PRODUCT_NAME = TPGSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		0BCAD4BB1D2EA46500C3FDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
+				PRODUCT_NAME = TPGSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		0BCAD4C71D2EA4BF00C3FDC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
+				PRODUCT_NAME = TPGSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0BCAD4C81D2EA4BF00C3FDC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
+				PRODUCT_NAME = TPGSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,6 +826,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0BCAD4AE1D2EA3FD00C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BCAD4AC1D2EA3FD00C3FDC4 /* Debug */,
+				0BCAD4AD1D2EA3FD00C3FDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BCAD4B91D2EA46500C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BCAD4BA1D2EA46500C3FDC4 /* Debug */,
+				0BCAD4BB1D2EA46500C3FDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BCAD4C61D2EA4BF00C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BCAD4C71D2EA4BF00C3FDC4 /* Debug */,
+				0BCAD4C81D2EA4BF00C3FDC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

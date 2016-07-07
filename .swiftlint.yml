@@ -1,5 +1,5 @@
 included:
-- Common
+- Sources
 disabled_rules:
 - line_length
 - variable_name
