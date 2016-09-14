@@ -9,7 +9,7 @@
 import Foundation
 
 
-extension API {
+public extension API {
 
     /**
         The API Key provided by the TPG.
@@ -18,11 +18,11 @@ extension API {
 
     public static let Host = "http://prod.ivtr-od.tpg.ch/v1"
 
-    public static let TimestampFormatter: NSDateFormatter = {
-        let formatter = NSDateFormatter()
+    public static let TimestampFormatter: DateFormatter = {
+        let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         return formatter
     }()
 
-    public static let HostURL  = NSURL(string:Host)!
+    public static let HostURL  = Foundation.URL(string:Host)!
 }

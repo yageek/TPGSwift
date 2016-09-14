@@ -58,14 +58,14 @@ public struct ParsedPhysicalStopRecord: JSONMarshable {
     }
 
 
-    public let timestamp: NSDate
+    public let timestamp: Date
     public let stops: [ParsePhysicalStopInfos]
 
     public init?(json: [String:AnyObject]) {
 
         guard let timestampValue = json["timestamp"] as? String, let stopsArray = json["stops"] as? [[String:AnyObject]] else { return nil }
 
-        guard let date = API.TimestampFormatter.dateFromString(timestampValue) else { return nil }
+        guard let date = API.TimestampFormatter.date(from: timestampValue) else { return nil }
 
         timestamp = date
         stops = stopsArray.flatMap { ParsePhysicalStopInfos(json: $0) }
