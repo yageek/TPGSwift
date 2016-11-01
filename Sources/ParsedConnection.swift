@@ -8,10 +8,8 @@
 
 import Foundation
 
-/**
-    ParsedConnection is a model containing the element from
-    the API.
- */
+/// ParsedConnection is a model containing the element from
+/// the API.
 public struct ParsedConnection: JSONMarshable {
 
     public let lineCode: String

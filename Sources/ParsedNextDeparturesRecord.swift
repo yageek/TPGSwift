@@ -10,7 +10,7 @@ import Foundation
 
 public struct ParsedNextDeparturesRecord: JSONMarshable {
 
-    public let timestamp: NSDate
+    public let timestamp: Date
     public let stop: ParsedStopsRecord.ParsedStop
     public let departures: [ParsedDeparture]
 
@@ -56,7 +56,7 @@ public struct ParsedNextDeparturesRecord: JSONMarshable {
             let stopRaw = json["stop"] as? [String: AnyObject],
             let departuresRaw = json["departures"] as? [[String:AnyObject]] else { return nil }
 
-        guard let date = API.TimestampFormatter.dateFromString(dateRaw) else { return nil }
+        guard let date = API.TimestampFormatter.date(from: dateRaw) else { return nil }
 
         guard let stopV = ParsedStopsRecord.ParsedStop(json: stopRaw) else { return nil }
 

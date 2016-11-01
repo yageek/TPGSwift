@@ -13,7 +13,7 @@ import Foundation
  */
 public struct ParsedLineColorRecord: JSONMarshable {
 
-    public let timestamp: NSDate
+    public let timestamp: Date
 
     public let lineColors: [ParsedLineColor]
 
@@ -26,7 +26,7 @@ public struct ParsedLineColorRecord: JSONMarshable {
 
         guard let timestamp = json["timestamp"] as? String, let colors = json["colors"] as? [[String:AnyObject]] else { return nil }
 
-        self.timestamp = API.TimestampFormatter.dateFromString(timestamp)!
+        self.timestamp = API.TimestampFormatter.date(from: timestamp)!
 
         var newColors: [ParsedLineColor] = []
 

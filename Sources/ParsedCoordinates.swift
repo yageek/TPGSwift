@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// An API object representing a coordinate in space.
 public struct ParsedCoordinates: JSONMarshable {
 
     public let latitude: Double

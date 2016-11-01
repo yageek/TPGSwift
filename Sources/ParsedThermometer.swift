@@ -10,7 +10,7 @@ import Foundation
 
 public struct ParsedThermometer: JSONMarshable {
 
-    public let timestamp: NSDate
+    public let timestamp: Date
     public let stop: ParsedStopsRecord
 
     public let lineCode: Double
@@ -35,7 +35,7 @@ public struct ParsedThermometer: JSONMarshable {
 
 
         guard
-            let timestampValue = API.TimestampFormatter.dateFromString(date),
+            let timestampValue = API.TimestampFormatter.date(from: date),
             let stopStruct = ParsedStopsRecord(json: stopRaw) else { return nil }
 
 
@@ -60,7 +60,7 @@ public struct ParsedThermometer: JSONMarshable {
         public let stop: ParsedStopsRecord
         public let departureCode: Double
         public let deviationCode: Double?
-        public let timestamp: NSDate
+        public let timestamp: Date
         public let arrivalTime: Double
         public let reliability: String
         public let deviation: Bool
@@ -79,7 +79,7 @@ public struct ParsedThermometer: JSONMarshable {
 
 
             guard let stopUnserialized = ParsedStopsRecord(json: stopRaw) else { return nil }
-            guard let timeStampValue = API.TimestampFormatter.dateFromString(date) else { return nil }
+            guard let timeStampValue = API.TimestampFormatter.date(from: date) else { return nil }
 
             stop = stopUnserialized
             departureCode = depCode

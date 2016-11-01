@@ -11,7 +11,7 @@ import Foundation
 public struct ParsedDisruption: JSONMarshable {
 
     public let code: String
-    public let timestamp: NSDate
+    public let timestamp: Date
     public let place: String
     public let nature: String
     public let consequence: String
@@ -27,7 +27,7 @@ public struct ParsedDisruption: JSONMarshable {
                 let placeValue = json["place"] as? String,
                 let name = json["stopName"] as? String else { return nil }
 
-        guard let timestampValue = API.TimestampFormatter.dateFromString(date) else { return nil }
+        guard let timestampValue = API.TimestampFormatter.date(from: date) else { return nil }
 
         code = disruptionCode
         timestamp = timestampValue
