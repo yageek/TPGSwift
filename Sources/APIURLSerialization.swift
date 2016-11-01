@@ -19,10 +19,7 @@ extension API {
     fileprivate static let DepartureCodeParameter = "departudeCode"
     fileprivate static let DestinationsCodeParameter = "destinationsCode"
 
-
-    /**
-     The `NSURL` requests corresponding to the current enum value.
-    */
+    /// The `NSURL` requests corresponding to the current enum value.
     public var URL: Foundation.URL {
 
         guard let Key = API.Key else { fatalError("API KEY has to been set.") }

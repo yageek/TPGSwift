@@ -8,9 +8,17 @@
 
 import Foundation
 
-/**
-    API is the enum used to called the different endpoints.
- */
+
+/// API is the enum used to called the different endpoints.
+///
+/// - GetStops: Get all Stops.
+/// - GetPhysicalStops: Get all physical stops.
+/// - GetNextDepartures: Get next departures.
+/// - GetAllNextDepartures: Get all the next departures.
+/// - GetThermometer: Get the thermometer.
+/// - GetThermometerPhysicalStops: Get the thermometer for physical stops.
+/// - GetLinesColors: Get the color for the lines.
+/// - GetDisruptions: Get the disruptions.
 public enum API {
 
     //MARK: Stops
@@ -32,6 +40,9 @@ public enum API {
     case GetDisruptions
 }
 
+
+/// JSONMarshable represents an item
+/// that can be convertible to JSON.
 public protocol JSONMarshable {
     init?(json: [String:AnyObject])
 }
