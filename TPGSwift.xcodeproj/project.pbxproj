@@ -91,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = swiftversion.xcconfig; sourceTree = "<group>"; };
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B353BAD1DC9075800A306B9 /* publish-doc.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "publish-doc.sh"; sourceTree = "<group>"; };
 		0B353BAF1DC907D200A306B9 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
@@ -211,6 +212,7 @@
 		0B7CD8941CE332CA00958468 = {
 			isa = PBXGroup;
 			children = (
+				0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */,
 				0BFC9EFD1DC9368500ABE636 /* Gemfile */,
 				0B353BBF1DC9086500A306B9 /* Tests */,
 				0B353BAF1DC907D200A306B9 /* .swift-version */,
@@ -784,6 +786,7 @@
 		};
 		0B7CD8B01CE332CA00958468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -835,6 +838,7 @@
 		};
 		0B7CD8B11CE332CA00958468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
