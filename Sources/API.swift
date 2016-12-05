@@ -21,22 +21,23 @@ import Foundation
 /// - GetDisruptions: Get the disruptions.
 public enum API {
 
-    //MARK: Stops
+    // MARK: Stops
+
     case GetStops(stopCode: String?, stopName: String?, line: String?, latitude: Float?, longitude: Float?)
     case GetPhysicalStops(stopCode: String?, stopName: String?)
 
-    //MARK: Departures
+    // MARK: Departures
     case GetNextDepartures(stopCode:String, departureCode:String?, linesCode:String?, destinationsCode:String?)
     case GetAllNextDepartures(stopCode:String, linesCode:String, destinationsCode:String)
 
-    //MARK: Thermometers
+    // MARK: Thermometers
     case GetThermometer(departureCode: String)
     case GetThermometerPhysicalStops(departureCode: String)
 
-    //MARK: LineColors
+    // MARK: LineColors
     case GetLinesColors
 
-    //MARK: Disruptions
+    // MARK: Disruptions
     case GetDisruptions
 }
 
@@ -44,5 +45,5 @@ public enum API {
 /// JSONMarshable represents an item
 /// that can be convertible to JSON.
 public protocol JSONMarshable {
-    init?(json: [String:AnyObject])
+    init?(json: [String:Any])
 }

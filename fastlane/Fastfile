@@ -1,0 +1,24 @@
+lane :dev do
+    bundle_install
+    xcodebuild(scheme: "TPGSwift-macOS", project: "TPGSwift.xcodeproj")
+    xcodebuild(scheme: "TPGSwift-iOS", project: "TPGSwift.xcodeproj")
+    xcodebuild(scheme: "TPGSwift-tvOS", project: "TPGSwift.xcodeproj")
+    xcodebuild(scheme: "TPGSwift-watchOS", project: "TPGSwift.xcodeproj")
+
+    jazzy(config: ".jazzy.yaml")
+
+end
+
+lane :test do
+    bundle_install
+    scan(scheme: "TPGSwift-macOS")
+    scan(scheme: "TPGSwift-iOS")
+    scan(scheme: "TPGSwift-tvOS")
+    slather(
+        html: true,
+        output_directory: "fastlane/coverage_output",
+        proj: "TPGSwift.xcodeproj",
+        scheme: "TPGSwift-macOS",
+        ignore:['../../*']
+    )
+end

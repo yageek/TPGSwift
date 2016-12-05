@@ -20,7 +20,7 @@ public struct ParsedConnection: JSONMarshable {
         Init for JSON.
         - parameter json: Initialize from a JSON object
      */
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard
             let lineCode = json["lineCode"] as? String,

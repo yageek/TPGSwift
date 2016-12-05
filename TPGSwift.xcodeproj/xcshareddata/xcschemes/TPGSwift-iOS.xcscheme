@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BCAD4A61D2EA3FD00C3FDC4"
-               BuildableName = "TPGSwift.framework"
-               BlueprintName = "TPGSwiftWatch"
+               BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
+               BuildableName = "TPGSwift-iOS.framework"
+               BlueprintName = "TPGSwift-iOS"
                ReferencedContainer = "container:TPGSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BCAD4A61D2EA3FD00C3FDC4"
-            BuildableName = "TPGSwift.framework"
-            BlueprintName = "TPGSwiftWatch"
+            BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
+            BuildableName = "TPGSwift-iOS.framework"
+            BlueprintName = "TPGSwift-iOS"
             ReferencedContainer = "container:TPGSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BCAD4A61D2EA3FD00C3FDC4"
-            BuildableName = "TPGSwift.framework"
-            BlueprintName = "TPGSwiftWatch"
+            BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
+            BuildableName = "TPGSwift-iOS.framework"
+            BlueprintName = "TPGSwift-iOS"
             ReferencedContainer = "container:TPGSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
