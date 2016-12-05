@@ -15,7 +15,7 @@ public struct ParsedCoordinates: JSONMarshable {
     public let longitude: Double
     public let referential: String
 
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard
             let lat = json["latitude"] as? Double,

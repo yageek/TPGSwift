@@ -22,9 +22,9 @@ public struct ParsedLineColorRecord: JSONMarshable {
 
         - parameter json: Initialize from a JSON object
      */
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
-        guard let timestamp = json["timestamp"] as? String, let colors = json["colors"] as? [[String:AnyObject]] else { return nil }
+        guard let timestamp = json["timestamp"] as? String, let colors = json["colors"] as? [[String:Any]] else { return nil }
 
         self.timestamp = API.TimestampFormatter.date(from: timestamp)!
 
@@ -55,7 +55,7 @@ public struct ParsedLineColor {
      Init for JSON.
      - parameter json: Initialize from a JSON object
      */
-    init?(json: [String:AnyObject]) {
+    init?(json: [String:Any]) {
 
         guard
             let color = json["hexa"] as? String,

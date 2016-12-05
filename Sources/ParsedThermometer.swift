@@ -21,7 +21,7 @@ public struct ParsedThermometer: JSONMarshable {
     public let disruptions: [ParsedDisruption]
 
 
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard let therm = json["thermometer"] as? [String: AnyObject] else { return nil }
 
@@ -29,9 +29,9 @@ public struct ParsedThermometer: JSONMarshable {
               let code = therm["lineCode"] as? Double,
               let destCode = therm["destinationCode"] as? String,
               let destName = therm["destinationName"] as? String,
-              let stopRaw = therm["stop"] as? [String:AnyObject],
-              let deviationsRaw = therm["deviations"] as? [[String:AnyObject]],
-              let disruptionsRaw = therm["disruptions"] as? [[String:AnyObject]] else { return nil }
+              let stopRaw = therm["stop"] as? [String:Any],
+              let deviationsRaw = therm["deviations"] as? [[String:Any]],
+              let disruptionsRaw = therm["disruptions"] as? [[String:Any]] else { return nil }
 
 
         guard
@@ -67,9 +67,9 @@ public struct ParsedThermometer: JSONMarshable {
         public let visible: Bool
 
 
-        public init?(json: [String:AnyObject]) {
+        public init?(json: [String:Any]) {
 
-            guard let stopRaw = json["stop"] as? [String:AnyObject],
+            guard let stopRaw = json["stop"] as? [String:Any],
             let depCode = json["departureCode"] as? Double,
             let date = json["timestamp"] as? String,
             let time = json["arrivalTime"] as? Double,

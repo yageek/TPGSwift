@@ -18,12 +18,12 @@ public struct ParsedPhysicalStopRecord: JSONMarshable {
         public let code: String
         public let stops: [ParsedPhysicalStop]
 
-        public init?(json: [String:AnyObject]) {
+        public init?(json: [String:Any]) {
 
             guard
                     let stopCode = json["stopCode"] as? String,
                     let stopName = json["stopName"] as? String,
-                    let stopsArray = json["stops"] as? [[String:AnyObject]] else { return nil }
+                    let stopsArray = json["stops"] as? [[String:Any]] else { return nil }
 
             name = stopName
             code = stopCode
@@ -39,13 +39,13 @@ public struct ParsedPhysicalStopRecord: JSONMarshable {
         public let connections: [ParsedConnection]
         public let coordinates: ParsedCoordinates
 
-        public init?(json: [String:AnyObject]) {
+        public init?(json: [String:Any]) {
 
             guard
                     let physicalStopCode = json["physicalStopCode"] as? String,
                     let stopName = json["stopName"] as? String,
                     let coordsRaw = json["coordinates"] as? [String: AnyObject],
-                    let connectsRaw = json["connections"] as? [[String:AnyObject]] else { return nil }
+                    let connectsRaw = json["connections"] as? [[String:Any]] else { return nil }
 
 
             guard let coords = ParsedCoordinates(json: coordsRaw) else { return nil }
@@ -61,9 +61,9 @@ public struct ParsedPhysicalStopRecord: JSONMarshable {
     public let timestamp: Date
     public let stops: [ParsePhysicalStopInfos]
 
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
-        guard let timestampValue = json["timestamp"] as? String, let stopsArray = json["stops"] as? [[String:AnyObject]] else { return nil }
+        guard let timestampValue = json["timestamp"] as? String, let stopsArray = json["stops"] as? [[String:Any]] else { return nil }
 
         guard let date = API.TimestampFormatter.date(from: timestampValue) else { return nil }
 

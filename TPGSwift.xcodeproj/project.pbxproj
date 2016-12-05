@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B7CD8A91CE332CA00958468 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD89E1CE332CA00958468 /* TPGSwift.framework */; };
 		0BCAD4941D2EA22000C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
 		0BCAD4951D2EA22000C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
 		0BCAD4961D2EA22000C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
@@ -62,21 +61,10 @@
 		0BCAD4EF1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0B7CD8AA1CE332CA00958468 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0B7CD8951CE332CA00958468 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0B7CD89D1CE332CA00958468;
-			remoteInfo = TPGSwift;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B5B82D51CE39DAD009BBD8F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		0B7CD89E1CE332CA00958468 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B7CD8A81CE332CA00958468 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7CD8BB1CE3345800958468 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0B91355C1D0AF1F800D70411 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TPGSwift.podspec; sourceTree = "<group>"; };
@@ -106,14 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0B7CD8A51CE332CA00958468 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B7CD8A91CE332CA00958468 /* TPGSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				0B7CD89E1CE332CA00958468 /* TPGSwift.framework */,
-				0B7CD8A81CE332CA00958468 /* TPGSwiftTests.xctest */,
 				0BCAD4A71D2EA3FD00C3FDC4 /* TPGSwift.framework */,
 				0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */,
 				0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */,
@@ -246,24 +225,6 @@
 			productReference = 0B7CD89E1CE332CA00958468 /* TPGSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0B7CD8A71CE332CA00958468 /* TPGSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0B7CD8B51CE332CA00958468 /* Build configuration list for PBXNativeTarget "TPGSwiftTests" */;
-			buildPhases = (
-				0B7CD8A41CE332CA00958468 /* Sources */,
-				0B7CD8A51CE332CA00958468 /* Frameworks */,
-				0B7CD8A61CE332CA00958468 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0B7CD8AB1CE332CA00958468 /* PBXTargetDependency */,
-			);
-			name = TPGSwiftTests;
-			productName = TPGSwiftTests;
-			productReference = 0B7CD8A81CE332CA00958468 /* TPGSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		0BCAD4A61D2EA3FD00C3FDC4 /* TPGSwiftWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BCAD4AE1D2EA3FD00C3FDC4 /* Build configuration list for PBXNativeTarget "TPGSwiftWatch" */;
@@ -332,9 +293,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
 					};
-					0B7CD8A71CE332CA00958468 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
 					0BCAD4A61D2EA3FD00C3FDC4 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -359,7 +317,6 @@
 			projectRoot = "";
 			targets = (
 				0B7CD89D1CE332CA00958468 /* TPGSwift */,
-				0B7CD8A71CE332CA00958468 /* TPGSwiftTests */,
 				0BCAD4A61D2EA3FD00C3FDC4 /* TPGSwiftWatch */,
 				0BCAD4B31D2EA46500C3FDC4 /* TPGSwiftTv */,
 				0BCAD4C01D2EA4BF00C3FDC4 /* TPGSwiftOSX */,
@@ -369,13 +326,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		0B7CD89C1CE332CA00958468 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0B7CD8A61CE332CA00958468 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,13 +392,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0B7CD8A41CE332CA00958468 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0BCAD4A21D2EA3FD00C3FDC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,14 +450,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0B7CD8AB1CE332CA00958468 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0B7CD89D1CE332CA00958468 /* TPGSwift */;
-			targetProxy = 0B7CD8AA1CE332CA00958468 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0B7CD8B01CE332CA00958468 /* Debug */ = {
@@ -630,7 +565,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -650,40 +585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		0B7CD8B61CE332CA00958468 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = TPGSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TPGSwiftTests/TPGSwiftTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		0B7CD8B71CE332CA00958468 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = TPGSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TPGSwiftTests/TPGSwiftTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -703,7 +605,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -725,7 +627,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -746,7 +648,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -767,7 +669,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -791,7 +693,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -813,7 +715,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -834,15 +736,6 @@
 			buildConfigurations = (
 				0B7CD8B31CE332CA00958468 /* Debug */,
 				0B7CD8B41CE332CA00958468 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0B7CD8B51CE332CA00958468 /* Build configuration list for PBXNativeTarget "TPGSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B7CD8B61CE332CA00958468 /* Debug */,
-				0B7CD8B71CE332CA00958468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

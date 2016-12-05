@@ -14,13 +14,13 @@ public struct ParsedDeviation: JSONMarshable {
     public let startStop: ParsedStopsRecord.ParsedStop?
     public let endStop: ParsedStopsRecord.ParsedStop?
 
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard let deviationCode = json["deviationCode"] as? Double else { return nil }
 
         code = deviationCode
 
-        if let start = json["startStop"] as? [String:AnyObject], let end = json["endStop"] as? [String:AnyObject] {
+        if let start = json["startStop"] as? [String:Any], let end = json["endStop"] as? [String:Any] {
             startStop = ParsedStopsRecord.ParsedStop(json: start)
             endStop = ParsedStopsRecord.ParsedStop(json: end)
         } else {

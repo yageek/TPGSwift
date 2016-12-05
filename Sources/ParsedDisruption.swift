@@ -17,7 +17,7 @@ public struct ParsedDisruption: JSONMarshable {
     public let consequence: String
     public let stopName: String
 
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard
                 let disruptionCode = json["disruptionCode"] as? String,
