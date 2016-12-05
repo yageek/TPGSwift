@@ -1,12 +1,9 @@
-lane :dev do
+lane :build do
     bundle_install
     xcodebuild(scheme: "TPGSwift-macOS", project: "TPGSwift.xcodeproj")
     xcodebuild(scheme: "TPGSwift-iOS", project: "TPGSwift.xcodeproj")
     xcodebuild(scheme: "TPGSwift-tvOS", project: "TPGSwift.xcodeproj")
     xcodebuild(scheme: "TPGSwift-watchOS", project: "TPGSwift.xcodeproj")
-
-    jazzy(config: ".jazzy.yaml")
-
 end
 
 lane :test do

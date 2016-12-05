@@ -49,11 +49,7 @@ public struct ParsedThermometer: JSONMarshable {
         deviations = deviationsRaw.flatMap { ParsedDeviation(json: $0) }
         disruptions = disruptionsRaw.flatMap { ParsedDisruption(json: $0) }
 
-
-
-
     }
-
 
     public struct Step: JSONMarshable {
 
@@ -94,7 +90,5 @@ public struct ParsedThermometer: JSONMarshable {
         }
 
     }
-
-
 
 }

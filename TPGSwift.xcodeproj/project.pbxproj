@@ -65,10 +65,10 @@
 		0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = swiftversion.xcconfig; sourceTree = "<group>"; };
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B58FC051DF5FCB0002301DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0B58FC091DF5FE3E002301DB /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = "<group>"; };
 		0B58FC131DF5FE61002301DB /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		0B58FC191DF5FF8D002301DB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B58FC1A1DF5FFCC002301DB /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		0B58FC1C1DF60215002301DB /* publish-doc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "publish-doc.sh"; sourceTree = "<group>"; };
 		0B5B82D51CE39DAD009BBD8F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		0B7CD89E1CE332CA00958468 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7CD8BB1CE3345800958468 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -137,13 +137,21 @@
 			path = fastlane;
 			sourceTree = "<group>";
 		};
+		0B58FC1B1DF60215002301DB /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				0B58FC1C1DF60215002301DB /* publish-doc.sh */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
 		0B7CD8941CE332CA00958468 = {
 			isa = PBXGroup;
 			children = (
+				0B58FC1B1DF60215002301DB /* utility */,
 				0B58FC191DF5FF8D002301DB /* .gitignore */,
 				0B58FC1A1DF5FFCC002301DB /* Gemfile */,
 				0B58FC0A1DF5FE61002301DB /* fastlane */,
-				0B58FC091DF5FE3E002301DB /* .jazzy.yaml */,
 				0B58FC051DF5FCB0002301DB /* README.md */,
 				0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */,
 				0B91355C1D0AF1F800D70411 /* Package.swift */,

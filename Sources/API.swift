@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// API is the enum used to called the different endpoints.
 ///
 /// - GetStops: Get all Stops.

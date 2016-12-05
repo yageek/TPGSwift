@@ -15,8 +15,7 @@ REPO_NAME="TPGSwift"
 if [ "$TRAVIS_REPO_SLUG" == "yageek/${REPO_NAME}" ]; then
 
 echo "Generating docs..."
-
-jazzy --clean --author "Yannick Heinrich" --author_url "https://blog.yageek.net" --github_url "https://github.com/yageek/${REPO_NAME}" --module "${REPO_NAME}" --xcodebuild-arguments "-scheme,${REPO_NAME}" --output "$HOME/docs/swift_output"
+jazzy --clean --author "Yannick Heinrich" --author_url "http://blog.yageek.net" --github_url "https://github.com/yageek/${REPO_NAME}" --module "${REPO_NAME}" --xcodebuild-arguments "-scheme,${REPO_NAME}" --output "$HOME/docs/swift_output"
 
 if [ $? -ne 0 ]
 
