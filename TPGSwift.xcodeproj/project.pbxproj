@@ -62,7 +62,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = swiftversion.xcconfig; sourceTree = "<group>"; };
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B58FC051DF5FCB0002301DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B58FC131DF5FE61002301DB /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
@@ -121,14 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B58FC081DF5FD84002301DB /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		0B58FC0A1DF5FE61002301DB /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +154,6 @@
 				0B7CD8BB1CE3345800958468 /* .swiftlint.yml */,
 				0BCAD4851D2EA22000C3FDC4 /* Sources */,
 				0B7CD89F1CE332CA00958468 /* Products */,
-				0B58FC081DF5FD84002301DB /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -476,7 +466,6 @@
 /* Begin XCBuildConfiguration section */
 		0B7CD8B01CE332CA00958468 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -528,7 +517,6 @@
 		};
 		0B7CD8B11CE332CA00958468 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B13489D1DC9D2EB00E2B23F /* swiftversion.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

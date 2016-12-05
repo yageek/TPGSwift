@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
-               BuildableName = "TPGSwift-iOS.framework"
+               BuildableName = "TPGSwift.framework"
                BlueprintName = "TPGSwift-iOS"
                ReferencedContainer = "container:TPGSwift.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
-            BuildableName = "TPGSwift-iOS.framework"
+            BuildableName = "TPGSwift.framework"
             BlueprintName = "TPGSwift-iOS"
             ReferencedContainer = "container:TPGSwift.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
-            BuildableName = "TPGSwift-iOS.framework"
+            BuildableName = "TPGSwift.framework"
             BlueprintName = "TPGSwift-iOS"
             ReferencedContainer = "container:TPGSwift.xcodeproj">
          </BuildableReference>
