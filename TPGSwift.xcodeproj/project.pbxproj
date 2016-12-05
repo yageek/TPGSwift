@@ -63,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0B58FC051DF5FCB0002301DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B5B82D51CE39DAD009BBD8F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		0B7CD89E1CE332CA00958468 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7CD8BB1CE3345800958468 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		0B7CD8941CE332CA00958468 = {
 			isa = PBXGroup;
 			children = (
+				0B58FC051DF5FCB0002301DB /* README.md */,
 				0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */,
 				0B91355C1D0AF1F800D70411 /* Package.swift */,
 				0BD0D3D71CE4671800375C8C /* LICENSE */,
