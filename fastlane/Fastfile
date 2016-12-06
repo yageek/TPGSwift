@@ -12,8 +12,7 @@ lane :test do
     scan(scheme: "TPGSwift-iOS")
     scan(scheme: "TPGSwift-tvOS")
     slather(
-        html: true,
-        output_directory: "fastlane/coverage_output",
+        coverage_service: coveralls,
         proj: "TPGSwift.xcodeproj",
         scheme: "TPGSwift-macOS",
         ignore:['../../*']

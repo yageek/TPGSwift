@@ -92,7 +92,6 @@
 		0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD0D3D71CE4671800375C8C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BD0D3D81CE4671800375C8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0BFC9EFF1DC936EF00ABE636 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +148,6 @@
 				0BD0D3D71CE4671800375C8C /* LICENSE */,
 				0BD0D3D81CE4671800375C8C /* README.md */,
 				0B5B82D51CE39DAD009BBD8F /* .travis.yml */,
-				0BFC9EFF1DC936EF00ABE636 /* .slather.yml */,
 				0B237D3C1CE37CBF006AD14C /* .gitignore */,
 				0B7CD8BB1CE3345800958468 /* .swiftlint.yml */,
 				0BCAD4851D2EA22000C3FDC4 /* Sources */,
