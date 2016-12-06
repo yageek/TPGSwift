@@ -8,9 +8,11 @@
 
 import Foundation
 
+
+/// A set of ParsedDeparture objects.
 public struct ParsedNextDeparturesRecord: JSONMarshable {
 
-    public let timestamp: NSDate
+    public let timestamp: Date
     public let stop: ParsedStopsRecord.ParsedStop
     public let departures: [ParsedDeparture]
 
@@ -24,13 +26,13 @@ public struct ParsedNextDeparturesRecord: JSONMarshable {
         public let characteristic: String?
         public let line: ParsedConnection
 
-        public init?(json: [String:AnyObject]) {
+        public init?(json: [String:Any]) {
 
             guard
                 let codeJSON = json["departureCode"] as? Double,
                 let waitingTimeJSON = json["waitingTime"] as? String,
                 let waitingTimemillisJSON = json["waitingTimeMillis"] as? Double,
-                let lineJSON = json["line"] as? [String:AnyObject],
+                let lineJSON = json["line"] as? [String:Any],
                 let reliabilityJSON = json["reliability"] as? String else { return nil }
 
 
@@ -49,14 +51,14 @@ public struct ParsedNextDeparturesRecord: JSONMarshable {
     }
 
 
-    public init?(json: [String : AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard
             let dateRaw = json["timestamp"] as? String,
             let stopRaw = json["stop"] as? [String: AnyObject],
-            let departuresRaw = json["departures"] as? [[String:AnyObject]] else { return nil }
+            let departuresRaw = json["departures"] as? [[String:Any]] else { return nil }
 
-        guard let date = API.TimestampFormatter.dateFromString(dateRaw) else { return nil }
+        guard let date = API.TimestampFormatter.date(from: dateRaw) else { return nil }
 
         guard let stopV = ParsedStopsRecord.ParsedStop(json: stopRaw) else { return nil }
 
