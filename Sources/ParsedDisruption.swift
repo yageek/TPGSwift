@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An API Object representing the disruption.
 public struct ParsedDisruption: JSONMarshable {
 
     public let code: String

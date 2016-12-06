@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+// MARK: - URL serialization.
 extension API {
 
     fileprivate static let StopCodeParameter = "stopCode"

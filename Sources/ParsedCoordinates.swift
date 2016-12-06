@@ -11,8 +11,14 @@ import Foundation
 /// An API object representing a coordinate in space.
 public struct ParsedCoordinates: JSONMarshable {
 
+
+    /// The latitude value.
     public let latitude: Double
+
+    /// The longitude value.
     public let longitude: Double
+
+    /// The referential.
     public let referential: String
 
     public init?(json: [String:Any]) {

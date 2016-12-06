@@ -12,14 +12,16 @@ import Foundation
 /// the API.
 public struct ParsedConnection: JSONMarshable {
 
+
+    /// The code of the line.
     public let lineCode: String
+
+    /// The name of the destination.
     public let destinationName: String
+
+    /// The code of the destination.
     public let destinationCode: String
 
-    /**
-        Init for JSON.
-        - parameter json: Initialize from a JSON object
-     */
     public init?(json: [String:Any]) {
 
         guard

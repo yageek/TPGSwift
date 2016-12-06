@@ -8,12 +8,19 @@
 
 import Foundation
 
+/// An API Object representing deviation.
 public struct ParsedDeviation: JSONMarshable {
 
-    public let code: Double
-    public let startStop: ParsedStopsRecord.ParsedStop?
-    public let endStop: ParsedStopsRecord.ParsedStop?
 
+    /// The code of the deviation.
+    public let code: Double
+
+    /// The starting stop of the deviation.
+    public let startStop: ParsedStopsRecord.ParsedStop?
+
+    /// The ending stop of the deviation.
+    public let endStop: ParsedStopsRecord.ParsedStop?
+    
     public init?(json: [String:Any]) {
 
         guard let deviationCode = json["deviationCode"] as? Double else { return nil }

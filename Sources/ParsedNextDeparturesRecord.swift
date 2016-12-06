@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+/// A set of ParsedDeparture objects.
 public struct ParsedNextDeparturesRecord: JSONMarshable {
 
     public let timestamp: Date

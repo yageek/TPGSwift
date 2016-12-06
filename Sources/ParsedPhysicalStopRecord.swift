@@ -8,9 +8,7 @@
 
 import Foundation
 
-/**
-    ParsedPhysicalStopRecord represents a set of physical stops.
- */
+/// ParsedPhysicalStopRecord represents a set of physical stops.
 public struct ParsedPhysicalStopRecord: JSONMarshable {
 
     public struct ParsePhysicalStopInfos: JSONMarshable {

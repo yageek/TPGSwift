@@ -8,14 +8,10 @@
 
 import Foundation
 
-/**
-    ParsedStopsRecord represents a set of `ParsedStop`.
- */
+/// ParsedStopsRecord represents a set of `ParsedStop`.
 public struct ParsedStopsRecord: JSONMarshable {
 
-    /**
-     ParsedStop represents an API object for stop.
-    */
+    /// ParsedStop represents an API object for stop.
     public struct ParsedStop {
 
         public let name: String
@@ -23,10 +19,6 @@ public struct ParsedStopsRecord: JSONMarshable {
         public let connections: [ParsedConnection]
         public let distance: Double?
 
-        /**
-         Init for JSON.
-         - parameter json: Initialize from a JSON object
-         */
         public init?(json: [String:Any]) {
 
             guard let stopCode = json["stopCode"] as? String, let stopName = json["stopName"] as? String else { return nil }
@@ -56,10 +48,6 @@ public struct ParsedStopsRecord: JSONMarshable {
     public let timestamp: Date
     public let stops: [ParsedStop]
 
-    /**
-     Init for JSON.
-     - parameter json: Initialize from a JSON object
-     */
     public init?(json: [String:Any]) {
 
         guard let timestampValue = json["timestamp"] as? String, let stopsArray = json["stops"] as? [[String:Any]] else { return nil }
