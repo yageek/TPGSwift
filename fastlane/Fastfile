@@ -1,8 +1,17 @@
 lane :build do
+    puts "⏳ - Install dependencies..."
     bundle_install
+
+    puts "🖥 - Building ..."
     xcodebuild(scheme: "TPGSwift-macOS", project: "TPGSwift.xcodeproj")
+
+    puts "📱 - Building ..."
     xcodebuild(scheme: "TPGSwift-iOS", project: "TPGSwift.xcodeproj")
+
+    puts "📺 - Building ..."
     xcodebuild(scheme: "TPGSwift-tvOS", project: "TPGSwift.xcodeproj")
+
+    puts "⌚️ - Building ..."
     xcodebuild(scheme: "TPGSwift-watchOS", project: "TPGSwift.xcodeproj")
 end
 

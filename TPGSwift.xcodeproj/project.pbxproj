@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B485AC91DF69C8100849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD89E1CE332CA00958468 /* TPGSwift.framework */; };
+		0B485AD21DF69CF200849902 /* TPGSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */; };
+		0B485ADC1DF69DB800849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */; };
+		0B485AEB1DF69DC800849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */; };
 		0BCAD4941D2EA22000C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
 		0BCAD4951D2EA22000C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
 		0BCAD4961D2EA22000C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
@@ -61,8 +65,37 @@
 		0BCAD4EF1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B485ACA1DF69C8100849902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7CD8951CE332CA00958468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B7CD89D1CE332CA00958468;
+			remoteInfo = "TPGSwift-iOS";
+		};
+		0B485ADD1DF69DB800849902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7CD8951CE332CA00958468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BCAD4B31D2EA46500C3FDC4;
+			remoteInfo = "TPGSwift-tvOS";
+		};
+		0B485AEC1DF69DC800849902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7CD8951CE332CA00958468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BCAD4C01D2EA4BF00C3FDC4;
+			remoteInfo = "TPGSwift-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B485AD01DF69C9300849902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPGSwiftTests.swift; sourceTree = "<group>"; };
+		0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B485AE61DF69DC800849902 /* TPGSwiftTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B58FC051DF5FCB0002301DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B58FC131DF5FE61002301DB /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		0B58FC191DF5FF8D002301DB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -95,6 +128,30 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B485AC11DF69C8100849902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B485AC91DF69C8100849902 /* TPGSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B485AD41DF69DB800849902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B485ADC1DF69DB800849902 /* TPGSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B485AE31DF69DC800849902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B485AEB1DF69DC800849902 /* TPGSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BCAD4A31D2EA3FD00C3FDC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +176,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B485ACF1DF69C9300849902 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0B485AD01DF69C9300849902 /* Info.plist */,
+				0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */,
+			);
+			name = Tests;
+			path = Sources/Tests;
+			sourceTree = "<group>";
+		};
 		0B58FC0A1DF5FE61002301DB /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +218,7 @@
 				0B237D3C1CE37CBF006AD14C /* .gitignore */,
 				0B7CD8BB1CE3345800958468 /* .swiftlint.yml */,
 				0BCAD4851D2EA22000C3FDC4 /* Sources */,
+				0B485ACF1DF69C9300849902 /* Tests */,
 				0B7CD89F1CE332CA00958468 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +230,9 @@
 				0BCAD4A71D2EA3FD00C3FDC4 /* TPGSwift.framework */,
 				0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */,
 				0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */,
+				0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */,
+				0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */,
+				0B485AE61DF69DC800849902 /* TPGSwiftTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +296,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0B485AC31DF69C8100849902 /* TPGSwiftTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B485ACE1DF69C8100849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-iOS" */;
+			buildPhases = (
+				0B485AC01DF69C8100849902 /* Sources */,
+				0B485AC11DF69C8100849902 /* Frameworks */,
+				0B485AC21DF69C8100849902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B485ACB1DF69C8100849902 /* PBXTargetDependency */,
+			);
+			name = "TPGSwiftTests-iOS";
+			productName = TPGSwiftTests;
+			productReference = 0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B485AD61DF69DB800849902 /* TPGSwiftTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B485ADF1DF69DB800849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-tvOS" */;
+			buildPhases = (
+				0B485AD31DF69DB800849902 /* Sources */,
+				0B485AD41DF69DB800849902 /* Frameworks */,
+				0B485AD51DF69DB800849902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B485ADE1DF69DB800849902 /* PBXTargetDependency */,
+			);
+			name = "TPGSwiftTests-tvOS";
+			productName = "TPGSwiftTests-tvOS";
+			productReference = 0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B485AE51DF69DC800849902 /* TPGSwiftTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B485AEE1DF69DC800849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-macOS" */;
+			buildPhases = (
+				0B485AE21DF69DC800849902 /* Sources */,
+				0B485AE31DF69DC800849902 /* Frameworks */,
+				0B485AE41DF69DC800849902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B485AED1DF69DC800849902 /* PBXTargetDependency */,
+			);
+			name = "TPGSwiftTests-macOS";
+			productName = "TPGSwiftTests-macOS";
+			productReference = 0B485AE61DF69DC800849902 /* TPGSwiftTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0B7CD89D1CE332CA00958468 /* TPGSwift-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B7CD8B21CE332CA00958468 /* Build configuration list for PBXNativeTarget "TPGSwift-iOS" */;
@@ -306,6 +431,20 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "yageek's company";
 				TargetAttributes = {
+					0B485AC31DF69C8100849902 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					0B485AD61DF69DB800849902 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5VGYH76875;
+						ProvisioningStyle = Automatic;
+					};
+					0B485AE51DF69DC800849902 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5VGYH76875;
+						ProvisioningStyle = Automatic;
+					};
 					0B7CD89D1CE332CA00958468 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
@@ -337,11 +476,35 @@
 				0BCAD4A61D2EA3FD00C3FDC4 /* TPGSwift-watchOS */,
 				0BCAD4B31D2EA46500C3FDC4 /* TPGSwift-tvOS */,
 				0BCAD4C01D2EA4BF00C3FDC4 /* TPGSwift-macOS */,
+				0B485AC31DF69C8100849902 /* TPGSwiftTests-iOS */,
+				0B485AD61DF69DB800849902 /* TPGSwiftTests-tvOS */,
+				0B485AE51DF69DC800849902 /* TPGSwiftTests-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B485AC21DF69C8100849902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B485AD51DF69DB800849902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B485AE41DF69DC800849902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BCAD4A51D2EA3FD00C3FDC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +546,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B485AC01DF69C8100849902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B485AD21DF69CF200849902 /* TPGSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B485AD31DF69DB800849902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B485AE21DF69DC800849902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7CD8991CE332CA00958468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,7 +646,126 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0B485ACB1DF69C8100849902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B7CD89D1CE332CA00958468 /* TPGSwift-iOS */;
+			targetProxy = 0B485ACA1DF69C8100849902 /* PBXContainerItemProxy */;
+		};
+		0B485ADE1DF69DB800849902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BCAD4B31D2EA46500C3FDC4 /* TPGSwift-tvOS */;
+			targetProxy = 0B485ADD1DF69DB800849902 /* PBXContainerItemProxy */;
+		};
+		0B485AED1DF69DC800849902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BCAD4C01D2EA4BF00C3FDC4 /* TPGSwift-macOS */;
+			targetProxy = 0B485AEC1DF69DC800849902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0B485ACC1DF69C8100849902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
+				PRODUCT_NAME = TPGSwiftTests;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0B485ACD1DF69C8100849902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
+				PRODUCT_NAME = TPGSwiftTests;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0B485AE01DF69DB800849902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5VGYH76875;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		0B485AE11DF69DB800849902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5VGYH76875;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		0B485AEF1DF69DC800849902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5VGYH76875;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0B485AF01DF69DC800849902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5VGYH76875;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		0B7CD8B01CE332CA00958468 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -732,6 +1036,31 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B485ACE1DF69C8100849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B485ACC1DF69C8100849902 /* Debug */,
+				0B485ACD1DF69C8100849902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B485ADF1DF69DB800849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B485AE01DF69DB800849902 /* Debug */,
+				0B485AE11DF69DB800849902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0B485AEE1DF69DC800849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B485AEF1DF69DC800849902 /* Debug */,
+				0B485AF01DF69DC800849902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0B7CD8981CE332CA00958468 /* Build configuration list for PBXProject "TPGSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
