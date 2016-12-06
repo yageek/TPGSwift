@@ -3,6 +3,8 @@ TPGSwift
 
 Swift libary for the TPG Open Data.
 
+[![Build Status](https://travis-ci.org/yageek/TPGSwift.svg?branch=master)](https://travis-ci.org/yageek/TPGSwift)
+
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
  [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/TPGSwift.svg)](https://img.shields.io/cocoapods/v/TPGSwift.svg)
@@ -10,8 +12,8 @@ Swift libary for the TPG Open Data.
 
 # Changelog
 
+ - 2.0.0: Swift 3 compatible.
  - 1.0.0: Basic JSON unmarshal structures.
-
 
 # License
 

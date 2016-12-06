@@ -8,25 +8,18 @@
 
 import Foundation
 
-/**
-    ParsedLineColorRecord represents a set of `ParsedLineColor` objects.
- */
+/// ParsedLineColorRecord represents a set of `ParsedLineColor` objects.
 public struct ParsedLineColorRecord: JSONMarshable {
 
-    public let timestamp: NSDate
+    public let timestamp: Date
 
     public let lineColors: [ParsedLineColor]
 
-    /**
-        Init for JSON.
+    public init?(json: [String:Any]) {
 
-        - parameter json: Initialize from a JSON object
-     */
-    public init?(json: [String:AnyObject]) {
+        guard let timestamp = json["timestamp"] as? String, let colors = json["colors"] as? [[String:Any]] else { return nil }
 
-        guard let timestamp = json["timestamp"] as? String, let colors = json["colors"] as? [[String:AnyObject]] else { return nil }
-
-        self.timestamp = API.TimestampFormatter.dateFromString(timestamp)!
+        self.timestamp = API.TimestampFormatter.date(from: timestamp)!
 
         var newColors: [ParsedLineColor] = []
 
@@ -41,9 +34,7 @@ public struct ParsedLineColorRecord: JSONMarshable {
 
 }
 
-/**
-    ParsedLineColor represents an API line color object.
- */
+/// ParsedLineColor represents an API line color object.
 public struct ParsedLineColor {
 
     public let hexa: String
@@ -51,11 +42,7 @@ public struct ParsedLineColor {
     public let background: String
     public let text: String
 
-    /**
-     Init for JSON.
-     - parameter json: Initialize from a JSON object
-     */
-    init?(json: [String:AnyObject]) {
+    init?(json: [String:Any]) {
 
         guard
             let color = json["hexa"] as? String,

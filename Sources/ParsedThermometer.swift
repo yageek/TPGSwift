@@ -10,7 +10,7 @@ import Foundation
 
 public struct ParsedThermometer: JSONMarshable {
 
-    public let timestamp: NSDate
+    public let timestamp: Date
     public let stop: ParsedStopsRecord
 
     public let lineCode: Double
@@ -21,7 +21,7 @@ public struct ParsedThermometer: JSONMarshable {
     public let disruptions: [ParsedDisruption]
 
 
-    public init?(json: [String:AnyObject]) {
+    public init?(json: [String:Any]) {
 
         guard let therm = json["thermometer"] as? [String: AnyObject] else { return nil }
 
@@ -29,13 +29,13 @@ public struct ParsedThermometer: JSONMarshable {
               let code = therm["lineCode"] as? Double,
               let destCode = therm["destinationCode"] as? String,
               let destName = therm["destinationName"] as? String,
-              let stopRaw = therm["stop"] as? [String:AnyObject],
-              let deviationsRaw = therm["deviations"] as? [[String:AnyObject]],
-              let disruptionsRaw = therm["disruptions"] as? [[String:AnyObject]] else { return nil }
+              let stopRaw = therm["stop"] as? [String:Any],
+              let deviationsRaw = therm["deviations"] as? [[String:Any]],
+              let disruptionsRaw = therm["disruptions"] as? [[String:Any]] else { return nil }
 
 
         guard
-            let timestampValue = API.TimestampFormatter.dateFromString(date),
+            let timestampValue = API.TimestampFormatter.date(from: date),
             let stopStruct = ParsedStopsRecord(json: stopRaw) else { return nil }
 
 
@@ -49,27 +49,23 @@ public struct ParsedThermometer: JSONMarshable {
         deviations = deviationsRaw.flatMap { ParsedDeviation(json: $0) }
         disruptions = disruptionsRaw.flatMap { ParsedDisruption(json: $0) }
 
-
-
-
     }
-
 
     public struct Step: JSONMarshable {
 
         public let stop: ParsedStopsRecord
         public let departureCode: Double
         public let deviationCode: Double?
-        public let timestamp: NSDate
+        public let timestamp: Date
         public let arrivalTime: Double
         public let reliability: String
         public let deviation: Bool
         public let visible: Bool
 
 
-        public init?(json: [String:AnyObject]) {
+        public init?(json: [String:Any]) {
 
-            guard let stopRaw = json["stop"] as? [String:AnyObject],
+            guard let stopRaw = json["stop"] as? [String:Any],
             let depCode = json["departureCode"] as? Double,
             let date = json["timestamp"] as? String,
             let time = json["arrivalTime"] as? Double,
@@ -79,7 +75,7 @@ public struct ParsedThermometer: JSONMarshable {
 
 
             guard let stopUnserialized = ParsedStopsRecord(json: stopRaw) else { return nil }
-            guard let timeStampValue = API.TimestampFormatter.dateFromString(date) else { return nil }
+            guard let timeStampValue = API.TimestampFormatter.date(from: date) else { return nil }
 
             stop = stopUnserialized
             departureCode = depCode
@@ -94,7 +90,5 @@ public struct ParsedThermometer: JSONMarshable {
         }
 
     }
-
-
 
 }

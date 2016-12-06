@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BCAD4B31D2EA46500C3FDC4"
+               BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
                BuildableName = "TPGSwift.framework"
-               BlueprintName = "TPGSwiftTv"
+               BlueprintName = "TPGSwift-iOS"
                ReferencedContainer = "container:TPGSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B485AC31DF69C8100849902"
+               BuildableName = "TPGSwiftTests.xctest"
+               BlueprintName = "TPGSwiftTests-iOS"
+               ReferencedContainer = "container:TPGSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
+            BuildableName = "TPGSwift.framework"
+            BlueprintName = "TPGSwift-iOS"
+            ReferencedContainer = "container:TPGSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BCAD4B31D2EA46500C3FDC4"
+            BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
             BuildableName = "TPGSwift.framework"
-            BlueprintName = "TPGSwiftTv"
+            BlueprintName = "TPGSwift-iOS"
             ReferencedContainer = "container:TPGSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BCAD4B31D2EA46500C3FDC4"
+            BlueprintIdentifier = "0B7CD89D1CE332CA00958468"
             BuildableName = "TPGSwift.framework"
-            BlueprintName = "TPGSwiftTv"
+            BlueprintName = "TPGSwift-iOS"
             ReferencedContainer = "container:TPGSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
