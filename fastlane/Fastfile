@@ -1,3 +1,5 @@
+
+
 lane :build do
     puts "⏳ - Install dependencies..."
     bundle_install
@@ -26,4 +28,8 @@ lane :test do
         scheme: "TPGSwift-macOS",
         ignore:['../../*']
     )
+end
+
+lane :doc do
+    jazzy(config: ".jazzy.yaml")
 end

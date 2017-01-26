@@ -12,3 +12,6 @@ env:
 osx_image: xcode8.1
 script:
     - bundle exec fastlane build
+after_success:
+    - bundle exec fastlane doc
+    - utility/publish-doc.sh

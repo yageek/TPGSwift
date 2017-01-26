@@ -14,17 +14,7 @@ REPO_NAME="TPGSwift"
 
 if [ "$TRAVIS_REPO_SLUG" == "yageek/${REPO_NAME}" ]; then
 
-echo "Generating docs..."
-bundle exec jazzy --clean --author "Yannick Heinrich" --author_url "http://blog.yageek.net" --github_url "https://github.com/yageek/${REPO_NAME}" --module "${REPO_NAME}" --xcodebuild-arguments "-scheme,${REPO_NAME}" --output "$HOME/docs/swift_output"
-
-if [ $? -ne 0 ]
-
-then
-echo "Failed to generate documentation";
-exit 1;
-
-fi
-
+cp -R "docs" "$HOME/docs_output"
 echo "Publishing to Github..."
 
 cd $HOME
@@ -34,7 +24,7 @@ git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/yageek/${REPO
 
 cd gh-pages
 git rm -rf .
-cp -Rf $HOME/docs/swift_output/* .
+cp -Rf $HOME/docs_output/* .
 git add -f .
 git commit -m "Latest ${REPO_NAME} doc on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to gh-pages"
 git push -fq origin gh-pages > /dev/null

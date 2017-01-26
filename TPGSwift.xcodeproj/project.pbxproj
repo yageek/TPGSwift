@@ -63,6 +63,8 @@
 		0BCAD4ED1D2EA55200C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BCAD4EE1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BCAD4EF1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BEC0F211E3A0D2600165171 /* TPGSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */; };
+		0BEC0F221E3A0D2700165171 /* TPGSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,7 @@
 		0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD0D3D71CE4671800375C8C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BD0D3D81CE4671800375C8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0BEC0F241E3A0E7300165171 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,7 @@
 				0B58FC1B1DF60215002301DB /* utility */,
 				0B58FC191DF5FF8D002301DB /* .gitignore */,
 				0B58FC1A1DF5FFCC002301DB /* Gemfile */,
+				0BEC0F241E3A0E7300165171 /* .jazzy.yaml */,
 				0B58FC0A1DF5FE61002301DB /* fastlane */,
 				0B58FC051DF5FCB0002301DB /* README.md */,
 				0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */,
@@ -558,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEC0F221E3A0D2700165171 /* TPGSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEC0F211E3A0D2600165171 /* TPGSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1058,7 @@
 				0B485AE11DF69DB800849902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B485AEE1DF69DC800849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-macOS" */ = {
 			isa = XCConfigurationList;
@@ -1060,6 +1067,7 @@
 				0B485AF01DF69DC800849902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B7CD8981CE332CA00958468 /* Build configuration list for PBXProject "TPGSwift" */ = {
 			isa = XCConfigurationList;

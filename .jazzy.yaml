@@ -1,0 +1,7 @@
+module: TPGSwift
+author: Yannick Heinrich
+author_url: http://blog.yageek.net/
+copyright: "© 2016 Yannick Heinrich"
+skip_undocumented: false
+framework_root: Sources
+umbrella_header: Sources/TPGSwift.h
