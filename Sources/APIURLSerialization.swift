@@ -29,21 +29,21 @@ extension API {
         let result:(path: String, parameters: [String:AnyObject?]?) = {
             switch self {
 
-            case .GetStops(let stopCode, let stopName, let line, let longitude, let latitude):
+            case .getStops(let stopCode, let stopName, let line, let longitude, let latitude):
                 return ("GetStops", [API.StopCodeParameter : stopCode as Optional<AnyObject>, API.StopNameParameter: stopName as Optional<AnyObject>, API.LineParameter: line as Optional<AnyObject>, API.LongitudeParameter: longitude as Optional<AnyObject>, API.LatitudeParameter: latitude as Optional<AnyObject>])
-            case .GetPhysicalStops(let stopCode, let stopName):
+            case .getPhysicalStops(let stopCode, let stopName):
                 return ("GetPhysicalStops", [API.StopCodeParameter  : stopCode as Optional<AnyObject>, API.StopNameParameter : stopName as Optional<AnyObject>])
-            case .GetNextDepartures(let stopCode, let departureCode, let linesCode, let destinationsCode):
+            case .getNextDepartures(let stopCode, let departureCode, let linesCode, let destinationsCode):
                 return ("GetNextDepartures", [API.StopCodeParameter  : stopCode as Optional<AnyObject>, API.DepartureCodeParameter: departureCode as Optional<AnyObject>, API.LinesCodeParameter: linesCode as Optional<AnyObject>, API.DestinationsCodeParameter: destinationsCode as Optional<AnyObject>])
-            case .GetAllNextDepartures(let stopCode, let linesCode, let destinationsCode):
+            case .getAllNextDepartures(let stopCode, let linesCode, let destinationsCode):
                 return ("GetNextDepartures", [API.StopCodeParameter  : stopCode as Optional<AnyObject>, API.LinesCodeParameter: linesCode as Optional<AnyObject>, API.DestinationsCodeParameter: destinationsCode as Optional<AnyObject>])
-            case .GetThermometer(let departureCode):
+            case .getThermometer(let departureCode):
                 return ("GetThermometer", [API.DepartureCodeParameter : departureCode as Optional<AnyObject>])
-            case .GetThermometerPhysicalStops(let departureCode):
+            case .getThermometerPhysicalStops(let departureCode):
                 return ("GetThermometerPhysicalStops", [API.DepartureCodeParameter  : departureCode as Optional<AnyObject>])
-            case .GetLinesColors:
+            case .getLinesColors:
                 return ("GetLinesColors", nil)
-            case .GetDisruptions:
+            case .getDisruptions:
                 return ("GetDisruptions", nil)
             }
         }()

@@ -1052,6 +1052,7 @@
 				0B485AE11DF69DB800849902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B485AEE1DF69DC800849902 /* Build configuration list for PBXNativeTarget "TPGSwiftTests-macOS" */ = {
 			isa = XCConfigurationList;
@@ -1060,6 +1061,7 @@
 				0B485AF01DF69DC800849902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B7CD8981CE332CA00958468 /* Build configuration list for PBXProject "TPGSwift" */ = {
 			isa = XCConfigurationList;
