@@ -10,34 +10,34 @@ import Foundation
 
 /// API is the enum used to called the different endpoints.
 ///
-/// - GetStops: Get all Stops.
-/// - GetPhysicalStops: Get all physical stops.
-/// - GetNextDepartures: Get next departures.
-/// - GetAllNextDepartures: Get all the next departures.
-/// - GetThermometer: Get the thermometer.
-/// - GetThermometerPhysicalStops: Get the thermometer for physical stops.
-/// - GetLinesColors: Get the color for the lines.
-/// - GetDisruptions: Get the disruptions.
+/// - getStops: Get all Stops.
+/// - getPhysicalStops: Get all physical stops.
+/// - getNextDepartures: Get next departures.
+/// - getAllNextDepartures: Get all the next departures.
+/// - getThermometer: Get the thermometer.
+/// - getThermometerPhysicalStops: Get the thermometer for physical stops.
+/// - getLinesColors: Get the color for the lines.
+/// - getDisruptions: Get the disruptions.
 public enum API {
 
     // MARK: Stops
 
-    case GetStops(stopCode: String?, stopName: String?, line: String?, latitude: Float?, longitude: Float?)
-    case GetPhysicalStops(stopCode: String?, stopName: String?)
+    case getStops(stopCode: String?, stopName: String?, line: String?, latitude: Float?, longitude: Float?)
+    case getPhysicalStops(stopCode: String?, stopName: String?)
 
     // MARK: Departures
-    case GetNextDepartures(stopCode:String, departureCode:String?, linesCode:String?, destinationsCode:String?)
-    case GetAllNextDepartures(stopCode:String, linesCode:String, destinationsCode:String)
+    case getNextDepartures(stopCode:String, departureCode:String?, linesCode:String?, destinationsCode:String?)
+    case getAllNextDepartures(stopCode:String, linesCode:String, destinationsCode:String)
 
     // MARK: Thermometers
-    case GetThermometer(departureCode: String)
-    case GetThermometerPhysicalStops(departureCode: String)
+    case getThermometer(departureCode: String)
+    case getThermometerPhysicalStops(departureCode: String)
 
     // MARK: LineColors
-    case GetLinesColors
+    case getLinesColors
 
     // MARK: Disruptions
-    case GetDisruptions
+    case getDisruptions
 }
 
 

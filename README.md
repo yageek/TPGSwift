@@ -12,6 +12,7 @@ Swift libary for the TPG Open Data.
 
 # Changelog
 
+ - 2.1.0: Fix enum code style.
  - 2.0.0: Swift 3 compatible.
  - 1.0.0: Basic JSON unmarshal structures.
 
