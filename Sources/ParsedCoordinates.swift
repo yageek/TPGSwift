@@ -9,8 +9,7 @@
 import Foundation
 
 /// An API object representing a coordinate in space.
-public struct ParsedCoordinates: JSONMarshable {
-
+public struct ParsedCoordinates: Codable {
 
     /// The latitude value.
     public let latitude: Double
@@ -20,16 +19,4 @@ public struct ParsedCoordinates: JSONMarshable {
 
     /// The referential.
     public let referential: String
-
-    public init?(json: [String:Any]) {
-
-        guard
-            let lat = json["latitude"] as? Double,
-            let long = json["longitude"] as? Double,
-            let ref = json["referential"] as? String else { return nil }
-
-        latitude = lat
-        longitude = long
-        referential = ref
-    }
 }

@@ -10,8 +10,7 @@ import Foundation
 
 /// ParsedConnection is a model containing the element from
 /// the API.
-public struct ParsedConnection: JSONMarshable {
-
+public struct ParsedConnection: Codable {
 
     /// The code of the line.
     public let lineCode: String
@@ -21,20 +20,5 @@ public struct ParsedConnection: JSONMarshable {
 
     /// The code of the destination.
     public let destinationCode: String
-
-    public init?(json: [String:Any]) {
-
-        guard
-            let lineCode = json["lineCode"] as? String,
-            let destinationName = json["destinationName"] as? String,
-            let destinationCode = json["destinationCode"] as? String
-            else {
-                return nil
-        }
-
-        self.lineCode = lineCode
-        self.destinationName = destinationName
-        self.destinationCode = destinationCode
-    }
 
 }

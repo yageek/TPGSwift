@@ -58,7 +58,7 @@ extension API {
 
         let pathURL = API.HostURL.appendingPathComponent(result.path).appendingPathExtension("json")
         var components = URLComponents(url: pathURL, resolvingAgainstBaseURL: true)
-        components?.queryItems = parameters.map({ (key, value) -> URLQueryItem in
+        components?.queryItems = parameters.map({ (__val:(String, Any)) -> URLQueryItem in let (key,value) = __val; 
             return URLQueryItem(name: key, value: String(describing: value))
         })
 
