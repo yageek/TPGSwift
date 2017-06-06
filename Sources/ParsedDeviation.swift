@@ -15,8 +15,8 @@ public struct ParsedDeviation: Decodable {
     public let code: Double
 
     /// The starting stop of the deviation.
-    public let startStop: ParsedStopsRecord.ParsedStop?
+    public let startStop: ParsedStop?
 
     /// The ending stop of the deviation.
-    public let endStop: ParsedStopsRecord.ParsedStop?
+    public let endStop: ParsedStop?
 }

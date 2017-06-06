@@ -19,17 +19,16 @@ public struct ParsedThermometer: Decodable {
 
     public let deviations: [ParsedDeviation]
     public let disruptions: [ParsedDisruption]
+}
 
-    public struct Step: Decodable {
+public struct Step: Decodable {
 
-        public let stop: ParsedStopsRecord
-        public let departureCode: Double
-        public let deviationCode: Double?
-        public let timestamp: Date
-        public let arrivalTime: Double
-        public let reliability: String
-        public let deviation: Bool
-        public let visible: Bool
-    }
-
+    public let stop: ParsedStopsRecord
+    public let departureCode: Double
+    public let deviationCode: Double?
+    public let timestamp: Date
+    public let arrivalTime: Double
+    public let reliability: String
+    public let deviation: Bool
+    public let visible: Bool
 }

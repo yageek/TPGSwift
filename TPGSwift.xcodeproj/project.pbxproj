@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0B485AC91DF69C8100849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD89E1CE332CA00958468 /* TPGSwift.framework */; };
-		0B485AD21DF69CF200849902 /* TPGSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */; };
 		0B485ADC1DF69DB800849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */; };
 		0B485AEB1DF69DC800849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */; };
+		0B7BB01A1EE6E99D00EC31CC /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7BB0191EE6E99D00EC31CC /* Decodable.swift */; };
+		0B9863591EE6E7730035E77C /* api_samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B9863581EE6E76E0035E77C /* api_samples.bundle */; };
+		0B98635A1EE6E7730035E77C /* api_samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B9863581EE6E76E0035E77C /* api_samples.bundle */; };
+		0B98635B1EE6E7740035E77C /* api_samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B9863581EE6E76E0035E77C /* api_samples.bundle */; };
 		0BCAD4941D2EA22000C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
 		0BCAD4951D2EA22000C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
 		0BCAD4961D2EA22000C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
@@ -93,7 +96,6 @@
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B485AD01DF69C9300849902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPGSwiftTests.swift; sourceTree = "<group>"; };
 		0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B485AE61DF69DC800849902 /* TPGSwiftTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B58FC051DF5FCB0002301DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -102,9 +104,11 @@
 		0B58FC1A1DF5FFCC002301DB /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		0B58FC1C1DF60215002301DB /* publish-doc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "publish-doc.sh"; sourceTree = "<group>"; };
 		0B5B82D51CE39DAD009BBD8F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		0B7BB0191EE6E99D00EC31CC /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		0B7CD89E1CE332CA00958468 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7CD8BB1CE3345800958468 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0B91355C1D0AF1F800D70411 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		0B9863581EE6E76E0035E77C /* api_samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = api_samples.bundle; sourceTree = "<group>"; };
 		0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TPGSwift.podspec; sourceTree = "<group>"; };
 		0BCAD4861D2EA22000C3FDC4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommons.swift; sourceTree = "<group>"; };
@@ -180,7 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				0B485AD01DF69C9300849902 /* Info.plist */,
-				0B485AD11DF69C9300849902 /* TPGSwiftTests.swift */,
+				0B9863581EE6E76E0035E77C /* api_samples.bundle */,
+				0B7BB0191EE6E99D00EC31CC /* Decodable.swift */,
 			);
 			name = Tests;
 			path = Sources/Tests;
@@ -489,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9863591EE6E7730035E77C /* api_samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +502,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B98635A1EE6E7730035E77C /* api_samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +510,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B98635B1EE6E7740035E77C /* api_samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B485AD21DF69CF200849902 /* TPGSwiftTests.swift in Sources */,
+				0B7BB01A1EE6E99D00EC31CC /* Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

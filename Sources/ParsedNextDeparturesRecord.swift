@@ -13,17 +13,17 @@ import Foundation
 public struct ParsedNextDeparturesRecord: Decodable {
 
     public let timestamp: Date
-    public let stop: ParsedStopsRecord.ParsedStop
+    public let stop: ParsedStop
     public let departures: [ParsedDeparture]
+}
 
-    public struct ParsedDeparture: Decodable {
+public struct ParsedDeparture: Decodable {
 
-        public let departureCode: Double
-        public let waitingTime: String
-        public let waitingTimeMillis: Double
-        public let connectionWaitingTime: Double?
-        public let reliability: String
-        public let characteristic: String?
-        public let line: ParsedConnection
-    }
+    public let departureCode: Double
+    public let waitingTime: String
+    public let waitingTimeMillis: Double
+    public let connectionWaitingTime: Double?
+    public let reliability: String
+    public let characteristic: String?
+    public let line: ParsedConnection
 }
