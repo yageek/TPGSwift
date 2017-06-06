@@ -10,13 +10,13 @@ import Foundation
 
 
 /// A set of ParsedDeparture objects.
-public struct ParsedNextDeparturesRecord: Codable {
+public struct ParsedNextDeparturesRecord: Decodable {
 
     public let timestamp: Date
     public let stop: ParsedStopsRecord.ParsedStop
     public let departures: [ParsedDeparture]
 
-    public struct ParsedDeparture: Codable {
+    public struct ParsedDeparture: Decodable {
 
         public let departureCode: Double
         public let waitingTime: String

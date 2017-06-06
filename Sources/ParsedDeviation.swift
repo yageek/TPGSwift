@@ -9,7 +9,7 @@
 import Foundation
 
 /// An API Object representing deviation.
-public struct ParsedDeviation: Codable {
+public struct ParsedDeviation: Decodable {
 
     /// The code of the deviation.
     public let code: Double

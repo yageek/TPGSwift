@@ -9,15 +9,15 @@
 import Foundation
 
 /// ParsedPhysicalStopRecord represents a set of physical stops.
-public struct ParsedPhysicalStopRecord: Codable {
+public struct ParsedPhysicalStopRecord: Decodable {
 
-    public struct ParsePhysicalStopInfos: Codable {
+    public struct ParsePhysicalStopInfos: Decodable {
         public let name: String
         public let code: String
         public let stops: [ParsedPhysicalStop]
     }
 
-    public struct ParsedPhysicalStop: Codable {
+    public struct ParsedPhysicalStop: Decodable {
 
         public let code: String
         public let name: String

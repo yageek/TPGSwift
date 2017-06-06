@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct ParsedThermometer: Codable {
+public struct ParsedThermometer: Decodable {
 
     public let timestamp: Date
     public let stop: ParsedStopsRecord
@@ -20,7 +20,7 @@ public struct ParsedThermometer: Codable {
     public let deviations: [ParsedDeviation]
     public let disruptions: [ParsedDisruption]
 
-    public struct Step: Codable {
+    public struct Step: Decodable {
 
         public let stop: ParsedStopsRecord
         public let departureCode: Double

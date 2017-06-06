@@ -9,10 +9,10 @@
 import Foundation
 
 /// ParsedStopsRecord represents a set of `ParsedStop`.
-public struct ParsedStopsRecord: Codable {
+public struct ParsedStopsRecord: Decodable {
 
     /// ParsedStop represents an API object for stop.
-    public struct ParsedStop: Codable {
+    public struct ParsedStop: Decodable {
 
         public let name: String
         public let code: String

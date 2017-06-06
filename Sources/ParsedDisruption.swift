@@ -9,7 +9,7 @@
 import Foundation
 
 /// An API Object representing the disruption.
-public struct ParsedDisruption: Codable {
+public struct ParsedDisruption: Decodable {
 
     public let code: String
     public let timestamp: Date

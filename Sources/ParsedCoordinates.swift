@@ -9,7 +9,7 @@
 import Foundation
 
 /// An API object representing a coordinate in space.
-public struct ParsedCoordinates: Codable {
+public struct ParsedCoordinates: Decodable {
 
     /// The latitude value.
     public let latitude: Double

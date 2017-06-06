@@ -10,7 +10,7 @@ import Foundation
 
 /// ParsedConnection is a model containing the element from
 /// the API.
-public struct ParsedConnection: Codable {
+public struct ParsedConnection: Decodable {
 
     /// The code of the line.
     public let lineCode: String
