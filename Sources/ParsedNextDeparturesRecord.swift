@@ -8,12 +8,11 @@
 
 import Foundation
 
-
 /// A set of ParsedDeparture objects.
 public struct ParsedNextDeparturesRecord: Decodable {
 
     public let timestamp: Date
-    public let stop: ParsedStop
+    public let stop: Stop
     public let departures: [ParsedDeparture]
 }
 
@@ -25,5 +24,5 @@ public struct ParsedDeparture: Decodable {
     public let connectionWaitingTime: Double?
     public let reliability: String
     public let characteristic: String?
-    public let line: ParsedConnection
+    public let line: Connection
 }

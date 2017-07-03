@@ -8,10 +8,11 @@
 
 import Foundation
 
-public struct ParsedThermometer: Decodable {
+public struct ParsedThermometer: Decodable, APIObject {
+    public static var recordName = ""
 
     public let timestamp: Date
-    public let stop: ParsedStopsRecord
+    public let stop: Record<Stop>
 
     public let lineCode: Double
     public let destinationName: String
@@ -23,7 +24,7 @@ public struct ParsedThermometer: Decodable {
 
 public struct Step: Decodable {
 
-    public let stop: ParsedStopsRecord
+    public let stop: Record<Stop>
     public let departureCode: Double
     public let deviationCode: Double?
     public let timestamp: Date

@@ -16,7 +16,7 @@ public extension API {
     public static var Key: String?
 
     /// The host of the TPG server. Equals "http://prod.ivtr-od.tpg.ch/v1".
-    public static let Host = "http://prod.ivtr-od.tpg.ch/v1"
+    public static let Host = "https://prod.ivtr-od.tpg.ch/v1"
 
     /// The formatter for all the date used within the API.
     public static let TimestampFormatter: DateFormatter = {

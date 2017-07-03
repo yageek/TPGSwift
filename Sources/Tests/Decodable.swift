@@ -7,9 +7,16 @@
 //
 
 import XCTest
+import Foundation
 @testable import TPGSwift
 
 class Decodable: XCTestCase {
+
+    var jsonDecoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }()
 
     static let bundle: Bundle = {
         let testBundle = Bundle(for: Decodable.self)
@@ -22,16 +29,17 @@ class Decodable: XCTestCase {
         return try Data(contentsOf: url)
     }
 
-    func testParsedStop() {
-
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
+    func testJSON() {
         do {
-            let data = try Decodable.getJSONSample(fileName: "GetStops")
-            try decoder.decode(ParsedStopsRecord.self, from: data)
+            // Stops
+            var data = try Decodable.getJSONSample(fileName: "GetStops")
+            let _ = try jsonDecoder.decode(Record<Stop>.self, from: data)
+
+            // Physiscal Stops
+            data = try Decodable.getJSONSample(fileName: "GetPhysicalStops")
+            let _ = try jsonDecoder.decode(Record<PhysicalStopInfos>.self, from: data)
         } catch let error {
             XCTFail("Should not have failed: \(error)")
         }
     }
-    
 }

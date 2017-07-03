@@ -1,5 +1,5 @@
 //
-//  ParsedConnection.swift
+//  Connection.swift
 //  TPGSwift
 //
 //  Created by Yannick Heinrich on 11.05.16.
@@ -10,7 +10,7 @@ import Foundation
 
 /// ParsedConnection is a model containing the element from
 /// the API.
-public struct ParsedConnection: Decodable {
+public struct Connection: Decodable {
 
     /// The code of the line.
     public let lineCode: String
