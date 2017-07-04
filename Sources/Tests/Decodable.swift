@@ -50,6 +50,11 @@ class DecodableTests: XCTestCase {
 
         // Next Departures
         assertDecode(NextDepartureRecord.self, fileName: "GetNextDepartures")
+        
+        // All Next Departures
+        assertDecode(NextDepartureRecord.self, fileName: "GetAllNextDepartures")
 
+        // Thermometers
+        assertDecode(Thermometer.self, fileName: "GetThermometer")
     }
 }

@@ -8,18 +8,17 @@
 
 import Foundation
 
-public struct ParsedThermometer: Decodable, APIObject {
-    public static var recordName = ""
+public struct Thermometer: Decodable {
 
     public let timestamp: Date
-    public let stop: Record<Stop>
+    public let stop: Stop
 
-    public let lineCode: Double
+    public let lineCode: String
     public let destinationName: String
     public let destinationCode: String
 
-    public let deviations: [Deviation]
-    public let disruptions: [Disruption]
+    public let deviations: [Deviation]?
+    public let disruptions: [Disruption]?
 }
 
 public struct Step: Decodable {

@@ -26,7 +26,7 @@ public struct PhysicalStopInfos: Decodable, APIObject {
         public let name: String
 
         public let connections: [Connection]
-        public let coordinates: ParsedCoordinates
+        public let coordinates: Coordinates
 
         public enum CodingKeys: String, CodingKey {
             case name = "stopName"

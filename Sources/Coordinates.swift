@@ -1,5 +1,5 @@
 //
-//  ParsedCoordinates.swift
+//  Coordinates.swift
 //  TPGSwift
 //
 //  Created by Yannick Heinrich on 12.05.16.
@@ -9,7 +9,7 @@
 import Foundation
 
 /// An API object representing a coordinate in space.
-public struct ParsedCoordinates: Decodable {
+public struct Coordinates: Decodable {
 
     /// The latitude value.
     public let latitude: Double
