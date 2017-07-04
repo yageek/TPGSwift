@@ -9,7 +9,7 @@
 import Foundation
 
 /// ParsedLineColorRecord represents a set of `ParsedLineColor` objects.
-public struct ParsedLineColorRecord: Decodable {
+public struct LineColor: Decodable {
 
     public let timestamp: Date
 
