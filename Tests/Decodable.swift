@@ -56,5 +56,11 @@ class DecodableTests: XCTestCase {
 
         // Thermometers
         assertDecode(Thermometer.self, fileName: "GetThermometer")
+
+        // All Phyisical Thermometers
+        assertDecode(Thermometer.self, fileName: "GetThermometerPhysicalStops")
+
+        // Line Colors
+        assertDecode(Record<LineColor>.self, fileName: "GetLineColors")
     }
 }
