@@ -18,8 +18,8 @@ public struct ParsedThermometer: Decodable, APIObject {
     public let destinationName: String
     public let destinationCode: String
 
-    public let deviations: [ParsedDeviation]
-    public let disruptions: [ParsedDisruption]
+    public let deviations: [Deviation]
+    public let disruptions: [Disruption]
 }
 
 public struct Step: Decodable {

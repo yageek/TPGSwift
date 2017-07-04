@@ -8,13 +8,18 @@
 
 import Foundation
 
-/// An API Object representing the disruption.
-public struct ParsedDisruption: Decodable {
-
-    public let code: String
+public struct Disruption: Decodable {
+    public let code: Int
     public let timestamp: Date
     public let place: String
     public let nature: String
     public let consequence: String
-    public let stopName: String
+
+    public enum CodingKeys: String, CodingKey {
+        case code = "disruptionCode"
+        case timestamp
+        case place
+        case nature
+        case consequence
+    }
 }

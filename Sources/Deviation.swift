@@ -9,7 +9,7 @@
 import Foundation
 
 /// An API Object representing deviation.
-public struct ParsedDeviation: Decodable {
+public struct Deviation: Decodable {
 
     /// The code of the deviation.
     public let code: Double
@@ -19,4 +19,10 @@ public struct ParsedDeviation: Decodable {
 
     /// The ending stop of the deviation.
     public let endStop: Stop?
+
+    public enum CodingKeys: String, CodingKey {
+        case code = "deviationCode"
+        case startStop
+        case endStop
+    }
 }

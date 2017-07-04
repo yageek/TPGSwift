@@ -10,7 +10,7 @@ import XCTest
 import Foundation
 @testable import TPGSwift
 
-class Decodable: XCTestCase {
+class DecodableTests: XCTestCase {
 
     var jsonDecoder: JSONDecoder = {
         let decoder = JSONDecoder()
@@ -19,27 +19,37 @@ class Decodable: XCTestCase {
     }()
 
     static let bundle: Bundle = {
-        let testBundle = Bundle(for: Decodable.self)
+        let testBundle = Bundle(for: DecodableTests.self)
         let sampleURL = testBundle.url(forResource: "api_samples", withExtension: "bundle")!
         return Bundle(url: sampleURL)!
     }()
 
     static func getJSONSample(fileName: String) throws -> Data {
-        let url = Decodable.bundle.url(forResource: fileName, withExtension: "json")!
+        let url = DecodableTests.bundle.url(forResource: fileName, withExtension: "json")!
         return try Data(contentsOf: url)
+    }
+    //public func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, _ message: @autoclosure () -> String = default, file: StaticString = #file, line: UInt = #line) where T : Equatable
+
+    func assertDecode<Obj>(_ type: @autoclosure () -> Obj.Type, fileName: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) where Obj: Decodable {
+        do {
+            let data = try DecodableTests.getJSONSample(fileName: fileName())
+            let _ = try jsonDecoder.decode(type(), from: data)
+
+        } catch let error {
+            XCTFail("JSON is not Equals: \(error)", file: file, line: line)
+        }
     }
 
     func testJSON() {
-        do {
-            // Stops
-            var data = try Decodable.getJSONSample(fileName: "GetStops")
-            let _ = try jsonDecoder.decode(Record<Stop>.self, from: data)
+        XCTAssertEqual(1, 1)
+        // Stops
+        assertDecode(Record<Stop>.self, fileName: "GetStops")
 
-            // Physiscal Stops
-            data = try Decodable.getJSONSample(fileName: "GetPhysicalStops")
-            let _ = try jsonDecoder.decode(Record<PhysicalStopInfos>.self, from: data)
-        } catch let error {
-            XCTFail("Should not have failed: \(error)")
-        }
+        // Physiscal Stops
+        assertDecode(Record<PhysicalStopInfos>.self, fileName: "GetPhysicalStops")
+
+        // Next Departures
+        assertDecode(NextDepartureRecord.self, fileName: "GetNextDepartures")
+
     }
 }
