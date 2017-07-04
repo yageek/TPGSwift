@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2950141F0A9FD7007CD911 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7BB0191EE6E99D00EC31CC /* Decodable.swift */; };
-		0B2950151F0A9FD8007CD911 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7BB0191EE6E99D00EC31CC /* Decodable.swift */; };
 		0B2950171F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
 		0B2950181F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
 		0B2950191F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
@@ -16,10 +14,6 @@
 		0B485AC91DF69C8100849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7CD89E1CE332CA00958468 /* TPGSwift.framework */; };
 		0B485ADC1DF69DB800849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCAD4B41D2EA46500C3FDC4 /* TPGSwift.framework */; };
 		0B485AEB1DF69DC800849902 /* TPGSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */; };
-		0B7BB01A1EE6E99D00EC31CC /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7BB0191EE6E99D00EC31CC /* Decodable.swift */; };
-		0B9863591EE6E7730035E77C /* api_samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B9863581EE6E76E0035E77C /* api_samples.bundle */; };
-		0B98635A1EE6E7730035E77C /* api_samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B9863581EE6E76E0035E77C /* api_samples.bundle */; };
-		0B98635B1EE6E7740035E77C /* api_samples.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B9863581EE6E76E0035E77C /* api_samples.bundle */; };
 		0BCAD4941D2EA22000C3FDC4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4861D2EA22000C3FDC4 /* API.swift */; };
 		0BCAD4951D2EA22000C3FDC4 /* APICommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */; };
 		0BCAD4961D2EA22000C3FDC4 /* APIURLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCAD4881D2EA22000C3FDC4 /* APIURLSerialization.swift */; };
@@ -72,6 +66,9 @@
 		0BCAD4ED1D2EA55200C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BCAD4EE1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BCAD4EF1D2EA55300C3FDC4 /* TPGSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCAD4931D2EA22000C3FDC4 /* TPGSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BF642171F0C2D19003CE540 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF642131F0C2D0B003CE540 /* Decodable.swift */; };
+		0BF642181F0C2D1A003CE540 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF642131F0C2D0B003CE540 /* Decodable.swift */; };
+		0BF642191F0C2D1A003CE540 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF642131F0C2D0B003CE540 /* Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +99,6 @@
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B2950161F0AA5AD007CD911 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B485AD01DF69C9300849902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B485AE61DF69DC800849902 /* TPGSwiftTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B58FC051DF5FCB0002301DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -111,11 +107,9 @@
 		0B58FC1A1DF5FFCC002301DB /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		0B58FC1C1DF60215002301DB /* publish-doc.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "publish-doc.sh"; sourceTree = "<group>"; };
 		0B5B82D51CE39DAD009BBD8F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		0B7BB0191EE6E99D00EC31CC /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		0B7CD89E1CE332CA00958468 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7CD8BB1CE3345800958468 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0B91355C1D0AF1F800D70411 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		0B9863581EE6E76E0035E77C /* api_samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = api_samples.bundle; sourceTree = "<group>"; };
 		0BCAD4831D2EA0F700C3FDC4 /* TPGSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TPGSwift.podspec; sourceTree = "<group>"; };
 		0BCAD4861D2EA22000C3FDC4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0BCAD4871D2EA22000C3FDC4 /* APICommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommons.swift; sourceTree = "<group>"; };
@@ -136,6 +130,9 @@
 		0BCAD4C11D2EA4BF00C3FDC4 /* TPGSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD0D3D71CE4671800375C8C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BD0D3D81CE4671800375C8C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0BF642121F0C2D0B003CE540 /* api_samples.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = api_samples.bundle; sourceTree = "<group>"; };
+		0BF642131F0C2D0B003CE540 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		0BF642141F0C2D0B003CE540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,17 +184,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B485ACF1DF69C9300849902 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0B485AD01DF69C9300849902 /* Info.plist */,
-				0B9863581EE6E76E0035E77C /* api_samples.bundle */,
-				0B7BB0191EE6E99D00EC31CC /* Decodable.swift */,
-			);
-			name = Tests;
-			path = Sources/Tests;
-			sourceTree = "<group>";
-		};
 		0B58FC0A1DF5FE61002301DB /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +216,7 @@
 				0B237D3C1CE37CBF006AD14C /* .gitignore */,
 				0B7CD8BB1CE3345800958468 /* .swiftlint.yml */,
 				0BCAD4851D2EA22000C3FDC4 /* Sources */,
-				0B485ACF1DF69C9300849902 /* Tests */,
+				0BF642111F0C2D0B003CE540 /* Tests */,
 				0B7CD89F1CE332CA00958468 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -269,6 +255,16 @@
 				0B2950161F0AA5AD007CD911 /* Record.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		0BF642111F0C2D0B003CE540 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0BF642121F0C2D0B003CE540 /* api_samples.bundle */,
+				0BF642131F0C2D0B003CE540 /* Decodable.swift */,
+				0BF642141F0C2D0B003CE540 /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,7 +498,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9863591EE6E7730035E77C /* api_samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +505,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B98635A1EE6E7730035E77C /* api_samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +512,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B98635B1EE6E7740035E77C /* api_samples.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7BB01A1EE6E99D00EC31CC /* Decodable.swift in Sources */,
+				0BF642171F0C2D19003CE540 /* Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2950151F0A9FD8007CD911 /* Decodable.swift in Sources */,
+				0BF642181F0C2D1A003CE540 /* Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2950141F0A9FD7007CD911 /* Decodable.swift in Sources */,
+				0BF642191F0C2D1A003CE540 /* Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
