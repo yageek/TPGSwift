@@ -61,7 +61,7 @@ extension API {
             return URLQueryItem(name: value.key, value: "\(value.value)")
         }
 
-        let url = components?.url
-        return url!
+        guard let url = components?.url else { fatalError("Wrong API specification")}
+        return url
     }
 }

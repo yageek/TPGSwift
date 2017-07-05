@@ -10,6 +10,9 @@
 		0B278A7C1F0CD604003D82B7 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */; };
 		0B278A7D1F0CD608003D82B7 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */; };
 		0B278A7E1F0CD609003D82B7 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */; };
+		0B278A821F0CDC6F003D82B7 /* URLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A811F0CDC6F003D82B7 /* URLSerialization.swift */; };
+		0B278A831F0CDC6F003D82B7 /* URLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A811F0CDC6F003D82B7 /* URLSerialization.swift */; };
+		0B278A841F0CDC6F003D82B7 /* URLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A811F0CDC6F003D82B7 /* URLSerialization.swift */; };
 		0B2950171F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
 		0B2950181F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
 		0B2950191F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
@@ -104,6 +107,7 @@
 /* Begin PBXFileReference section */
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTest.swift; sourceTree = "<group>"; };
+		0B278A811F0CDC6F003D82B7 /* URLSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSerialization.swift; sourceTree = "<group>"; };
 		0B2950161F0AA5AD007CD911 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,8 +273,9 @@
 			children = (
 				0BF642121F0C2D0B003CE540 /* api_samples.bundle */,
 				0BF642131F0C2D0B003CE540 /* Decodable.swift */,
-				0BF642141F0C2D0B003CE540 /* Info.plist */,
 				0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */,
+				0B278A811F0CDC6F003D82B7 /* URLSerialization.swift */,
+				0BF642141F0C2D0B003CE540 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF642171F0C2D19003CE540 /* Decodable.swift in Sources */,
+				0B278A821F0CDC6F003D82B7 /* URLSerialization.swift in Sources */,
 				0B278A7C1F0CD604003D82B7 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF642181F0C2D1A003CE540 /* Decodable.swift in Sources */,
+				0B278A831F0CDC6F003D82B7 /* URLSerialization.swift in Sources */,
 				0B278A7D1F0CD608003D82B7 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF642191F0C2D1A003CE540 /* Decodable.swift in Sources */,
+				0B278A841F0CDC6F003D82B7 /* URLSerialization.swift in Sources */,
 				0B278A7E1F0CD609003D82B7 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,5 +14,4 @@ class ColorsTest: XCTestCase {
     func testColorConversion() {
         XCTAssertNoThrow(try colorFromString(hex: "CC3399"))
     }
-
 }

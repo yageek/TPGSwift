@@ -28,7 +28,6 @@ class DecodableTests: XCTestCase {
         let url = DecodableTests.bundle.url(forResource: fileName, withExtension: "json")!
         return try Data(contentsOf: url)
     }
-    //public func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, _ message: @autoclosure () -> String = default, file: StaticString = #file, line: UInt = #line) where T : Equatable
 
     func assertDecode<Obj>(_ type: @autoclosure () -> Obj.Type, fileName: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) where Obj: Decodable {
         do {
