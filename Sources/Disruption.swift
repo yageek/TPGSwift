@@ -8,11 +8,22 @@
 
 import Foundation
 
+/// A Disruption object
 public struct Disruption: Decodable {
+
+    /// The code of the disruption
     public let code: Int
+
+    /// The date
     public let timestamp: Date
+
+    /// The place of the disruption
     public let place: String
+
+    /// The nature of disruption
     public let nature: String
+
+    /// The consequence of disruption
     public let consequence: String
 
     public enum CodingKeys: String, CodingKey {

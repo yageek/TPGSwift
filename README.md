@@ -3,6 +3,8 @@ TPGSwift
 
 Swift libary for the TPG Open Data.
 
+For more explanation: [TPG Open Data](http://www.tpg.ch/fr/web/open-data/mode-d-emploi)
+
 [![Build Status](https://travis-ci.org/yageek/TPGSwift.svg?branch=master)](https://travis-ci.org/yageek/TPGSwift)
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)

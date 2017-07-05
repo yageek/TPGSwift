@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Stop represents an API object for stop.
+/// A Stop response
 public struct Stop: Decodable, APIObject {
 
     public static var recordName = "stops"
@@ -20,8 +20,16 @@ public struct Stop: Decodable, APIObject {
         case distance
     }
 
+    /// The name of the stop
     public let name: String
+
+    /// The code of the stops
     public let code: String
+
+    /// The connection of the stops
     public let connections: [Connection]
+    
+    /// The distance to the provided
+    /// latitude and longitude
     public let distance: Double?
 }

@@ -61,5 +61,8 @@ class DecodableTests: XCTestCase {
 
         // Line Colors
         assertDecode(Record<LineColor>.self, fileName: "GetLineColors")
+
+        // Error code
+        assertDecode(ErrorCode.self, fileName: "ErrorCode")
     }
 }

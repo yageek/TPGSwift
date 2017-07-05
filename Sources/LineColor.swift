@@ -7,7 +7,8 @@
 //
 
 import Foundation
-// MARK: - Color
+
+// MARK: - Color conversion
 
 #if os(iOS) || os(watchOS) || os(tvOS)
     import UIKit
@@ -60,13 +61,21 @@ func colorFromString(hex: String) throws -> Color {
 }
 
 // MARK: - LineColor
-/// LineColor represents an API line color object.
+
+/// A LineColor response.
 public struct LineColor: Decodable, APIObject {
     public static var recordName = "colors"
 
+    /// The color of the line (same as background?)
     public let hexa: Color
+
+    /// The code of the line
     public let code: String
+
+    /// The background color (same as hexa?)
     public let background: Color
+
+    /// The color of the text
     public let text: Color
 
     public enum CodingKeys: String, CodingKey {
