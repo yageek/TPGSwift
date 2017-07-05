@@ -161,9 +161,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastlane
-  jazzy
-  slather
+  fastlane!
+  jazzy!
+  slather!
 
 BUNDLED WITH
    1.15.1

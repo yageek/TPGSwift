@@ -1,5 +1,5 @@
-source "https://rubygems.org"
-
-gem "fastlane"
-gem "slather"
-gem "jazzy"
+source 'https://rubygems.org' do
+    gem "fastlane"
+    gem "slather"
+    gem "jazzy"
+end
