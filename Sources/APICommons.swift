@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 // MARK: - Server informations.
 public extension API {
 

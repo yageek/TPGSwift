@@ -37,5 +37,3 @@ public struct PhysicalStopInfos: Decodable, APIObject {
         }
     }
 }
-
-

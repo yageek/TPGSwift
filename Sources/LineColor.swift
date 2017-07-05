@@ -88,4 +88,3 @@ public struct LineColor: Decodable, APIObject {
         self.text = try colorFromString(hex: textString)
     }
 }
-
