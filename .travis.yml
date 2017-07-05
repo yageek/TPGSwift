@@ -1,3 +1,4 @@
+os: osx
 osx_image: xcode9
 
 before_install:
@@ -11,4 +12,4 @@ env:
 
 osx_image: xcode8.1
 script:
-    - bundle exec fastlane build
+    - bundle exec fastlane test
