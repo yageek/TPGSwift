@@ -9,7 +9,7 @@
 import Foundation
 // MARK: - Color
 
-#if os(iOS)
+#if os(iOS) || os(watchOS) || os(tvOS)
     import UIKit
     public typealias Color = UIColor
 #elseif os(macOS)
@@ -22,18 +22,16 @@ public enum ColorError: Error {
     case scanError
 }
 
-fileprivate func color(rgba: String) throws -> Color {
-    var red:   CGFloat = 0.0
+func colorFromString(hex: String) throws -> Color {
+    var red: CGFloat = 0.0
     var green: CGFloat = 0.0
-    var blue:  CGFloat = 0.0
+    var blue: CGFloat = 0.0
     var alpha: CGFloat = 1.0
 
-    let index   = rgba.characters.index(rgba.startIndex, offsetBy: 1)
-    let hex     = rgba.substring(from: index)
     let scanner = Scanner(string: hex)
     var hexValue: CUnsignedLongLong = 0
     if scanner.scanHexInt64(&hexValue) {
-        switch (hex.characters.count) {
+        switch hex.count {
         case 3:
             red   = CGFloat((hexValue & 0xF00) >> 8)       / 15.0
             green = CGFloat((hexValue & 0x0F0) >> 4)       / 15.0
@@ -53,7 +51,7 @@ fileprivate func color(rgba: String) throws -> Color {
             blue  = CGFloat((hexValue & 0x0000FF00) >> 8)  / 255.0
             alpha = CGFloat(hexValue & 0x000000FF)         / 255.0
         default:
-            throw ColorError.invalidRGBString(rgba)
+            throw ColorError.invalidRGBString(hex)
         }
     } else {
         throw ColorError.scanError
@@ -85,9 +83,9 @@ public struct LineColor: Decodable, APIObject {
         let textString = try container.decode(String.self, forKey: .text)
 
         self.code = try container.decode(String.self, forKey: .code)
-        self.hexa = try color(rgba: hexaString)
-        self.background = try color(rgba: backgroundString)
-        self.text = try color(rgba: textString)
+        self.hexa = try colorFromString(hex: hexaString)
+        self.background = try colorFromString(hex: backgroundString)
+        self.text = try colorFromString(hex: textString)
     }
 }
 

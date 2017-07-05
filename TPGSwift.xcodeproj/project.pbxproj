@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B278A7C1F0CD604003D82B7 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */; };
+		0B278A7D1F0CD608003D82B7 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */; };
+		0B278A7E1F0CD609003D82B7 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */; };
 		0B2950171F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
 		0B2950181F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
 		0B2950191F0AA5AD007CD911 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2950161F0AA5AD007CD911 /* Record.swift */; };
@@ -100,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		0B237D3C1CE37CBF006AD14C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTest.swift; sourceTree = "<group>"; };
 		0B2950161F0AA5AD007CD911 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		0B485AC41DF69C8100849902 /* TPGSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPGSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B485AD71DF69DB800849902 /* TPGSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPGSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +270,7 @@
 				0BF642121F0C2D0B003CE540 /* api_samples.bundle */,
 				0BF642131F0C2D0B003CE540 /* Decodable.swift */,
 				0BF642141F0C2D0B003CE540 /* Info.plist */,
+				0B278A7B1F0CD604003D82B7 /* ColorsTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				0BCAD4BD1D2EA4BF00C3FDC4 /* Frameworks */,
 				0BCAD4BE1D2EA4BF00C3FDC4 /* Headers */,
 				0BCAD4BF1D2EA4BF00C3FDC4 /* Resources */,
+				0B278A7F1F0CD976003D82B7 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -455,6 +461,7 @@
 					0B485AE51DF69DC800849902 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5VGYH76875;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					0B7CD89D1CE332CA00958468 = {
@@ -545,6 +552,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B278A7F1F0CD976003D82B7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		0B7CD8BD1CE3348B00958468 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF642171F0C2D19003CE540 /* Decodable.swift in Sources */,
+				0B278A7C1F0CD604003D82B7 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF642181F0C2D1A003CE540 /* Decodable.swift in Sources */,
+				0B278A7D1F0CD608003D82B7 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF642191F0C2D1A003CE540 /* Decodable.swift in Sources */,
+				0B278A7E1F0CD609003D82B7 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +724,7 @@
 				PRODUCT_NAME = TPGSwiftTests;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -716,7 +740,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
 				PRODUCT_NAME = TPGSwiftTests;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -733,7 +757,7 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
@@ -750,7 +774,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
@@ -770,8 +794,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -789,8 +813,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.TPGSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -920,7 +944,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -941,7 +965,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -962,7 +986,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -985,7 +1009,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1007,7 +1031,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1029,7 +1053,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1053,7 +1077,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1076,7 +1100,7 @@
 				PRODUCT_NAME = TPGSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
