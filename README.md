@@ -14,6 +14,7 @@ For more explanation: [TPG Open Data](http://www.tpg.ch/fr/web/open-data/mode-d-
 
 # Changelog
 
+ - 3.0.0: Swift 4 support
  - 2.1.0: Fix enum code style.
  - 2.0.0: Swift 3 compatible.
  - 1.0.0: Basic JSON unmarshal structures.
