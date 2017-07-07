@@ -21,10 +21,10 @@ public protocol APIObject {
 public struct Record<Object: APIObject>: Decodable {
 
     /// The date when the response has been generated
-    let timestamp: Date
+    public let timestamp: Date
 
     /// The elements of the record
-    let elements: [Object]
+    public let elements: [Object]
 
     public enum CodingKeys: CodingKey {
         case timestamp
