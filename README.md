@@ -40,6 +40,9 @@ print("API Stops: \(getStops.URL)")
 // MARK: - Decode
 
 let json = JSONDecoder()
+// This is mandatory
+decoder.dateDecodingStrategy = .iso8601
+
 do {
     let stops = try json.decode(Record<Stop>.self, from: data)
     print("Stops: \(stops)")
