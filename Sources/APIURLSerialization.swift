@@ -47,7 +47,7 @@ extension API {
             }
         }()
 
-        var parameters = ["key": Key as AnyObject] as [String:Any]
+        var parameters = ["key": Key as AnyObject] as [String: Any]
 
         if let additionalParameters = result.parameters {
             for (key, value) in additionalParameters {
