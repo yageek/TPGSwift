@@ -57,6 +57,7 @@ class DecodableTests: XCTestCase {
 
         // Thermometers
         assertDecode(Thermometer.self, fileName: "GetThermometer")
+        assertDecode(Thermometer.self, fileName: "GetThermometer2")
 
         // All Phyisical Thermometers
         assertDecode(Thermometer.self, fileName: "GetThermometerPhysicalStops")
