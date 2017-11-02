@@ -9,10 +9,14 @@
 import Foundation
 
 /// A Disruption object
-public struct Disruption: Decodable {
+public struct Disruption: Decodable, APIObject {
 
+    public static var recordName = "disruptions"
     /// The code of the disruption
-    public let code: Int
+    public let code: Int?
+
+    // The code of the concerned line.
+    public let lineCode: String?
 
     /// The date
     public let timestamp: Date
@@ -32,5 +36,7 @@ public struct Disruption: Decodable {
         case place
         case nature
         case consequence
+        case lineCode
     }
+
 }
