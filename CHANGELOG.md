@@ -1,3 +1,6 @@
+# 3.0.2
+- Fix disruptions parsing.
+
 # 3.0.1
 - Fix invalid URL construction for request including a departudecode
 - Fix parsing error for next departures. [#1](https://github.com/yageek/TPGSwift/issues/1)
