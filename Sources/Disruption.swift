@@ -30,7 +30,7 @@ public struct Disruption: Decodable, APIObject {
     /// The consequence of disruption
     public let consequence: String
 
-    public enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case code = "disruptionCode"
         case timestamp
         case place
